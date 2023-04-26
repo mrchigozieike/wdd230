@@ -61,7 +61,7 @@ ul li {
     padding-bottom: 5px;
 }
 a {
-    color: seagreen;
+    color: rgb(4, 17, 4);
 }
 a:active {
     color: tomato;
