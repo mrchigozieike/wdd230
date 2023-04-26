@@ -1,6 +1,7 @@
 const d = new Date();
 
-  document.getElementById("currentyear").textContent = d.getFullYear();
+  document.querySelector("#currentyear").textContent = d.getFullYear();
 
-  let oLastModif = new Date(document.lastModified);
-  document.getElementById("lastmodified").textContent = oLastModif;
+
+  let oLastModif = new Date();
+  document.querySelector("#lastmodified").textContent = oLastModif;

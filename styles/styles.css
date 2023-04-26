@@ -49,6 +49,7 @@ h2 {
     width: 95%;
 }
 ul {
+    
     margin: 0;
     padding-top: 10px;
     width: calc(100% - 40px);
@@ -56,6 +57,7 @@ ul {
     overflow-y: auto;
 }
 ul li {
+    color: #232323;
     padding-bottom: 5px;
 }
 a {
