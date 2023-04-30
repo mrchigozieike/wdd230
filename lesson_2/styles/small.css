@@ -1,37 +1,13 @@
-body {
-    font-size: 20px;
-    line-height: 1.5;
-    font-family: 'PT Sans Narrow', sans-serif;
-    background-color: #FFFFFF;
+main {
+    grid-template-columns: 1fr;
+    grid-gap: 20px 0;
 }
-
-h1 {
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
+main > section {
+    grid-column: 1;
+    width: 90%;
+    max-width: 450px;
+    justify-self: center;
 }
-
-h2 {
-    font-size: 25px;
-    margin-bottom: 0.5rem;
-}
-
-header,
-main,
-footer {
-    margin: 1.25rem auto;
-    max-width: 750px;
-}
-
-header,
-footer {
-    background-color: #cce6ff;
-    color: black;
-    text-align: center;
-    padding: 1rem;
-
-}
-
-header img {
-    margin: 15px;
+section img {
+    max-width: 500px;
 }
