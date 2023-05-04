@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Slab&family=Roboto:ital@1&display=swap');
 @media only screen and (min-width: 992px) {
 
     nav ul {
@@ -10,9 +11,7 @@
 
 }
 
-* {
-    font-family: 'Gugi', sans-serif;
-}
+
 
 html {
     background-color: lightblue;
@@ -47,6 +46,8 @@ h1 {
     color: white;
     align-self: center;
     margin-bottom: 0.25em;
+    font-family: 'Roboto Slab', serif;
+
 }
 header > img {
     width: 100%;
@@ -59,9 +60,26 @@ main {
     margin: 25px 25px 25px 25px;
     position: relative;
 }
+#roboto{
+    color: #232323;
+    font-family: 'Roboto Slab';
+}
+#serif{
+    color: #232323;
+    font-family: serif;
+}
+#rale{
+    color: #232323;
+    font-family: 'Raleway';
+}
+#sans{
+    color: #232323;
+    font-family: 'sans-serif';
+}
 h2 {
     margin-bottom: 0;
     width: 95%;
+    font-family: 'Raleway', sans-serif;
 }
 ul {
     margin: 0;
