@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@media only screen and (min-width: 992px) {
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+}
+
+* {
+    font-family: 'Gugi', sans-serif;
+}
 
 html {
     background-color: lightblue;
@@ -20,18 +34,19 @@ body {
 }
 header {
     padding: 20px;
-    display: grid;
+    /* display: grid; */
     background-color: rgb(46, 120, 139);
-    grid-template-columns: 22% 34%;
+    /* grid-template-columns: 22% 34%; */
     border-radius: 5px;
-    z-index: 15;
-    justify-content: space-around;
+    /* z-index: 15; */
+    /* justify-content: space-around; */
     box-shadow: 1px 1px 25px black;
 }
 h1 {
-    font-size: 40px;
+    font-size: 2em;
     color: white;
     align-self: center;
+    margin-bottom: 0.25em;
 }
 header > img {
     width: 100%;
@@ -39,9 +54,9 @@ header > img {
     border-radius: 5px;
 }
 main {
-    width: 97%;
+    /* width: 97%; */
     height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
+    margin: 25px 25px 25px 25px;
     position: relative;
 }
 h2 {
@@ -49,22 +64,18 @@ h2 {
     width: 95%;
 }
 ul {
-    
     margin: 0;
     padding-top: 10px;
-    width: calc(100% - 40px);
+    /* width: calc(100% - 40px); */
     height: 94%;
     overflow-y: auto;
 }
-ul li {
-    color: #232323;
-    padding-bottom: 5px;
-}
+
 a {
-    color: rgb(20, 9, 110);
+    color: rgb(46, 58, 139);
 }
 a:active {
-    color: tomato;
+    color: rgb(136, 81, 71);
 }
 footer {
     background-color: rgb(46, 120, 139);;
@@ -108,6 +119,7 @@ footer a:hover {
     top: calc(100%);
 }
 
+
 ::-webkit-scrollbar {
     width: 7px;
 }
@@ -120,8 +132,7 @@ footer a:hover {
 }
 
 .text-header {
-    font-family: 'Raleway', sans-serif;
-    text-shadow: 1px 1px 50px #232323;
+    text-shadow: 1px 1px 20px #232323;
 }
 
 .text-shadow-content {
@@ -139,6 +150,30 @@ footer a:hover {
 }
 
 
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #396E94   ;
+    --secondary-color: #9d9c99 ;
+    --accent1-color: #12A319;
+    --accent2-color: #7f0a7b;
+    --accent3-color: #ffffff;
+
+    /* change the values below to your chosen font(s) */
+    --heading-font: 'Italiana';
+    --paragraph-font: Italiana, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #396E94  ;
+    --nav-link-color: #396E94;
+    --nav-background-color: #D4AC0D;
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: #396E94;
+  }
+  
 .colors {
     width: 100%;
     min-width: 350px;
@@ -149,7 +184,7 @@ footer a:hover {
     background-color: #999;
   }
   .colors td{
-    width: 25%;
+    width: 20%;
     height: 3em;
   }
   .primary {
