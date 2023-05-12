@@ -65,7 +65,7 @@ a {
     color: rgb(20, 9, 110);
 }
 a:active {
-    color: tomato;
+    color: #232323;
 }
 footer {
     background-color: rgb(46, 120, 139);;
