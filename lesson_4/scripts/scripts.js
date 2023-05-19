@@ -1,19 +1,19 @@
-const d = new Date();
+// Get the current date and time
+var currentDate = new Date();
 
-document.querySelector("#currentyear").textContent = d.getFullYear();
+// Format the time as HH:MM:SS
+var currentTime = currentDate.toLocaleTimeString();
 
-
-let oLastModif = new Date();
-document.querySelector("#lastmodified").textContent = oLastModif;
-
-
+// Update the datetime element with the current time
+var datetimeElement = document.getElementById("datetime");
+datetimeElement.textContent = currentTime;
 
 
 
 
 function toggleMenu() {
-  document.getElementById('primaryNav').classList.toggle('open');
-  document.getElementById('hamburguerBtn').classList.toggle('open');
+    document.getElementById('primaryNav').classList.toggle('open');
+    document.getElementById('hamburguerBtn').classList.toggle('open');
 }
 
 const x = document.getElementById('hamburguerBtn');
@@ -21,16 +21,3 @@ const x = document.getElementById('hamburguerBtn');
 x.onclick = toggleMenu;
 
 article = document.querySelector('#message');
-
-weekday = date.getDay();
-
-/* Banner */
-
-if (weekday === 1 || weekday === 2) {
-  article.textContent = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-  article.setAttribute('class', 'banner-message');
-}
-
-let joint = document.querySelector('.join-us');
-joint.addEventListener("click", () => { location.assign("https://diaz0107.github.io/wdd230/lesson08/joint.html"); });
-
