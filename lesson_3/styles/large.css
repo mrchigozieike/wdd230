@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&family=Roboto+Slab&family=Roboto:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&display=swap');
+
 @media only screen and (min-width: 992px) {
 
     nav ul {
@@ -181,15 +183,15 @@ footer a:hover {
     --paragraph-font: Italiana, Helvetica, sans-serif;
   
     /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #396E94;  /* headlines on a white background */ 
+    --headline-color-on-white: #489ad4;  /* headlines on a white background */ 
     --headline-color-on-color: white; /* headlines on a colored background */ 
-    --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
+    --paragraph-color-on-white: #489ad4; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #396E94  ;
-    --nav-link-color: #396E94;
+    --paragraph-background-color: #489ad4  ;
+    --nav-link-color: #489ad4;
     --nav-background-color: #D4AC0D;
     --nav-hover-link-color: white;
-    --nav-hover-background-color: #396E94;
+    --nav-hover-background-color: #489ad4;
   }
   
 .colors {
@@ -199,7 +201,7 @@ footer a:hover {
     text-align: center;
   }
   .colors th {
-    background-color: #999;
+    background-color: #c7c7c7;
   }
   .colors td{
     width: 20%;
