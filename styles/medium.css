@@ -1,4 +1,4 @@
-@media screen and (min-width: 32.5em) {
+@media screen and (min-width: 32.5em) and (max-width: 894px) {
     h1 {
         padding-left: 5em;
       }

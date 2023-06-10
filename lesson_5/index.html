@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page will contain my Chamber of Commerce Home Page.">    
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/small.css" rel="stylesheet">
+    <link href="styles/medium.css" rel="stylesheet">
+    <link href="styles/large.css" rel="stylesheet">
+
+    <title>Owerri Town Chamber of Commerce Home Page</title>
+</head>
+
+<body>
+    <div id="message"></div>
+    <header>
+
+        <div class="headname">
+            <img class="logo" src="images/logohead.png" alt="Ottawa Chamber of Commerce">
+            <h1 class="header-title">Owerri Town Chamber of Commerce</h1>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook image"></a>
+            <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter image"></a>
+        </div>
+
+        <div>
+            <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
+        </div>
+        <div class="menu">
+            <nav>
+                <ul id="primaryNav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li> <a href="discover.html">Discover</a></li>
+                    <li> <a href="joint.html">Joint</a></li>
+                    <li><a href="business.html">Directory</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="date-header">
+            <p id="datetime"></p>
+        </div>
+
+               
+
+    </header>
+    <main>
+        <div class="hero">
+            <picture class="optipic">
+          
+                <img src="images/pareto.jpg" alt="the O-Town Chamber of Commerce business">
+                <button class="join-us">Join the O-Town Chamber of Commerce by clicking here!</button>
+            </picture>
+        </div>
+
+        <div class="event">
+            <br><b>
+                <center>O-Town Chamber of Commerce
+            </b>
+            Advocates for collaborative and sustainable community prosperity, Builds support for local businesses as
+            they launch, pivot or grow
+            Champions the City of Otown as the best place to live, work and invest.
+        </div>
+
+        <div class="weather">
+            <h2>O-Town Weather</h2>
+            <hr>
+            <div class="weather-div">
+                <div class="weather-container">
+                    <h2><span id="temp"></span>℉</h2>
+                    <figure>
+                        <img src="#" alt="" id="weathericon">
+                        <figcaption id="figcaption"></figcaption>
+                    </figure>
+                </div>
+                <p>Wind: <span id="wind"></span> MPH</p>
+                <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p><br>
+                <hr>
+            </div>
+            <a class="weather-link" href="https://openweathermap.org/" target="_blank">Weather by OpenWeather</a>
+        </div>
+
+        <div class="news">
+            <span id="news-date"><b><br><br>
+                    <center>MAY 15, 2023
+                </b></span>
+            <p>Small Business Resilience Critical for Otown Economic Growth
+                Emerging from the pandemic, supporting small business resilience and growth has never been more
+                important
+                and is a key theme for the O-Town Chamber of Commerce’s (OCC) annual Small Business: Too Big To Ignore
+                campaign.
+            </p>
+        </div>
+
+        <div class="joinbutton">
+            <button class="join-us">Join Us!</button>
+            <p class="text-join">Click join-us to become a member of the Otown Chamber of Commerce. </p>
+        </div>
+
+        <aside class="aside">
+            <div>
+                <img src="images/images.png">
+                <small> O-Town Best TV - <strong>GOLD Membership</strong></small>
+            </div>
+
+            <div>
+                <img src="images/image4.png">
+                <small> O-Town Best Hotel - <strong>GOLD Membership</strong></small>
+            </div>
+
+            <div class="spotlight3">
+                <img src="images/ima3.png">
+                <small>O-Town Senators - <strong>GOLD Membership</strong></small>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <div class="logo-footer">
+            <img class="logo-footer" src="./images/logofoot.png" alt="Otown Logo image">
+        </div>
+        <div class="title-footer">
+            <h2>O-Town Chamber of Commerce</h2>
+        </div>
+        <div class="contact">
+            <p>ike22001@byui.edu</p>
+            <p>+(234) 8063365400</p>
+            <a
+                href="https://www.google.com/maps/place/Owerri,+Imo/@5.5129252,6.9911492,12z/data=!3m1!4b1!4m6!3m5!1s0x104259980202a4a1:0x2b97fd8924660eb1!8m2!3d5.5096455!4d7.0390904!16zL20vMDNyNzdx">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;📍 Location<br>
+            </a>
+
+        </div>
+        <div class="footer-line">
+
+        </div>
+        <div class="info">
+            <span> &nbsp; &nbsp; &copy;<span id="©">
+                </span> &nbsp; O-Town Chamber of Commerce &nbsp;</span>.:|:.&nbsp; Chigozie Henry Ike &nbsp;.:|:. &nbsp;
+            WDD 230
+            Project &nbsp;.:|:. &nbsp; 
+        </div>
+      
+
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/windchill.js"></script>
+    
+</body>
+
+</html>
