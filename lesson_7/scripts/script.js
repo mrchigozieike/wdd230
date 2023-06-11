@@ -1,3 +1,4 @@
+
 const allImages = document.querySelectorAll("img[data-src]")
 
 const lazyLoad = (img) => {
@@ -17,7 +18,7 @@ const options = {
 if ('IntersectionObserver' in window) {
     const obsrvr = new IntersectionObserver((items, observer) => {
         items.forEach((item) => {
-            if(item.isIntersecting) {
+            if (item.isIntersecting) {
                 lazyLoad(item.target)
                 observer.unobserve(item.target)
             }

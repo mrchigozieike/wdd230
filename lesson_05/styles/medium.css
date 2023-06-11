@@ -2,16 +2,8 @@
 /** Media Queries for Medium views *************/
 /***********************************************/
 
-@media only screen and (min-width: 768px)  {
+@media (min-width: 37.5em) {
 	
-	nav ul {
-        display: flex;
-    }
-
-    nav ul li {
-        flex: 1 1 100%;
-    }
-
 	aside {
 		display: flex;
 		flex-direction: row;
@@ -31,7 +23,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-gap: 1em;
-		max-width: 800px;
 	}
 
 	.hero {
@@ -39,10 +30,6 @@
 		grid-row: 1/2;
 	}
 
-	.herodiscover {
-		grid-column: 1/4;
-		grid-row: 1/2;
-	}
 	.news {
 		grid-column: 1/4;
 		grid-row: 3/4;
@@ -136,20 +123,5 @@
 	.join-us:hover{
 		background-color: #ff7d00;
 	}
-}
-
-.mygallery {
-	display: grid;
-	grid-template-columns: 200px 200px;
-	justify-content: center;
-	grid-gap: 10px;
-	height: 80%;
-}
-.mygallery figcaption {
-	background-color: #FFECD1;
-	padding: 5px;
-	text-align: center;
-	font-family: 'Lato', sans-serif;
-	border: thin silver solid;
 }
 
