@@ -1,27 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>O-town Chamber of Commerce</title>
-    <meta name="description" content="Join/register page for The O-town Chamber of Commerce Project">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./styles/small.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Weather Site Planning Home Page</title>
+    <meta name="description" content="This page will contain my weather site planning document Home Page.">
 
-
+    <link rel="shortcut icon" href="favicon/icon_32f88267bfc9b9b9540121e0394fdd15.ico">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="styles/small.css" rel="stylesheet">
+  
 </head>
 
 <body>
+   <header>     <div class="headname">
+    <img class="logo" src="images/logohead.png" alt="Ottawa Chamber of Commerce">
+    <h1 class="header-title">Owerri Town Chamber of Commerce</h1>
+</div>
+    <nav>
+      <a href="index.html">Home</a> <a href="about_page.html">About</a> <a href="site-plan.html">Site Plan</a> <a href="contactme.html">Contact Me</a>
+    </nav>
+  </header>
 
     <header>
 
-        <div class="headname">
-            <img class="logo" src="images/chamberlogohead.png" alt="O-town Chamber of Commerce">
-            <h1 class="header-title">O-town Chamber of Commerce</h1>
-        </div>
+       
         <div class="social">
             <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook image"></a>
             <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter image"></a>
@@ -30,15 +34,14 @@
         <div>
             <button id="hamburguerBtn"><span>&#9776;</span><span>X</span></button>
         </div>
-
         <div class="menu">
             <nav>
                 <ul id="primaryNav">
-                    <li> <a href="../lesson06/index.html">Home</a></li>
-                    <li> <a href="../lesson07/discover.html">Discover</a></li>
-                    <li><a href="../lesson09/business.html">Directory</a></li>
-                    <li class="active"><a href="join.html">Join</a></li>
-                    <li> <a href="../lesson10/contact.html">Contact</a></li>
+                    <li class="active"><a href="#">Home</a></li>
+                    <li> <a href="discover.html">Discover</a></li>
+                    <li> <a href="joint.html">Joint</a></li>
+                    <li><a href="business.html">Directory</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,90 +49,78 @@
             <p id="datetime"></p>
         </div>
 
+
+
     </header>
-    <main class="main-joint">
-        <div class="registration">
-            <h1>Chamber of Commerce Registration</h1>
+
+    <main>
+        <section>
+            <h2>Contact Form</h2>
             <hr>
-            <br>
+            <!--CONTACT FORM-->
+
             <form method="get" action="thanks.html">
 
                 <fieldset class="form">
-                    <Legend> Member Registration</Legend>
-                    <!--Registration Information-->
-               
 
-                    <div class="form-box">
-                        <label for="firstname">First Name</label>
-                        <input class="box" type="text" id="name" name="user_name" required minlength="3" maxlength="10" size="12" placeholder="First Name">
-                    </div>
-                    <label class="top" for="lastname">Last Name*
-                        <input class="box" type="text" id="lastname" name="user_lastname" required minlength="3"
-                            maxlength="10" size="12" placeholder="Last Name">
-                    </label>
-
-                    <label class="top" for="mail">E-mail Address*
-                        <input class="box" type="email" id="mail" name="user_email" placeholder="user@email.com"
+                    <legend>Applicant Information</legend>
+                    <!--full name-->
+                    <label class="top" for="name">Full Name*
+                        <input class="box" type="text" id="name" name="user_name" pattern="[A-Z a-z]{5,}"
                             required></label>
-                    <label class="top" for="phone">Cell Phone Number*
+                    <!--I need to add more here, see the requirement page-->
+
+
+                    <!--email-->
+                    <label class="top" for="mail">E-mail Address
+                        <input class="box" type="email" id="mail" name="user_email"
+                            placeholder="user@email.com"></label>
+
+
+                    <!--phone number-->
+                    <label class="top" for="phone">Phone Number*
                         <input class="box" type="tel" id="phone" name="user_phone" placeholder="###-###-####"
                             required></label>
-                    <label class="top" for="busname">Business Name
-                        <input class="box" type="text" id="busname" name="bus_name" required minlength="3"
-                            maxlength="20" size="22"></label>
+
+
+                    <!--zip code-->
+                    <label class="top" for="zip">ZIP Code*
+                        <input class="box" type="number" id="zip" name="zip_code" required></label>
+
                 </fieldset>
 
-                <fieldset class="mform">
-                    <legend>Membership Level</legend>
-                    <!--Registration date-->
-                    <input class="mform" type="hidden" id="member_date" name="member_date" value="">
-                    <!--Registration Levels-->
-                    <label> <input type="radio" name="membershiplevel" value="np"> NP Membership</label>
-                    <label> <input type="radio" name="membershiplevel" value="bronze"> Bronze Membership</label>
-                    <label> <input type="radio" name="membershiplevel" value="silver"> Silver Membership</label>
-                    <label> <input type="radio" name="membershiplevel" value="gold"> Gold Membership</label>
+
+                <!--Additional information or comments-->
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <label class="submitButton" for="msg">Comments</label>
+                    <textarea class="commentsBox" id="msg" name="user_message"></textarea>
                 </fieldset>
 
-                <input class="button" type="submit" value="Send Registration Form">
+                <!--form submission button-->
+                <input class="button" type="submit" value="Send Storm Report">
+
+
             </form>
-        </div>
-
+            <!--end contact form-->
 
 
     </main>
-    <footer>
-        <div class="logo-footer">
-            <img class="logo-footer" src="./images/logofoot.png" alt="Otown Logo image">
-        </div>
-        <div class="title-footer">
-            <h2>O-Town Chamber of Commerce</h2>
-        </div>
-        <div class="contact">
-            <p>ike22001@byui.edu</p>
-            <p>+(234) 8063365400</p>
-            <a
-                href="https://www.google.com/maps/place/Owerri,+Imo/@5.5129252,6.9911492,12z/data=!3m1!4b1!4m6!3m5!1s0x104259980202a4a1:0x2b97fd8924660eb1!8m2!3d5.5096455!4d7.0390904!16zL20vMDNyNzdx">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;📍 Location<br>
-            </a>
 
-        </div>
-        <div class="footer-line">
+    </section>
+    </main>
+
+    <footer>
+
 
         </div>
         <div class="info">
             <span> &nbsp; &nbsp; &copy;<span id="©">
-                </span> &nbsp; O-Town Chamber of Commerce &nbsp;</span>.:|:.&nbsp; Chigozie Henry Ike &nbsp;.:|:. &nbsp;
+                </span> &nbsp; O-Town Chamber of Commerce &nbsp;</span>.:|:.&nbsp; Chigozie Henry Ike &nbsp;.:|:.
+            &nbsp;
             WDD 230
             Project &nbsp;.:|:. &nbsp;
         </div>
 
-
-    </footer>
-    <script src="script/date.js"></script>
-    <script src="script/script.js"></script>
-    <script src="script/adjust.js"></script>
-    <script src="script/webfontload.js"></script>
-    <script src="script/selectresponse.js"></script>
-</body>
 
 </html>

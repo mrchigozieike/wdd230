@@ -36,10 +36,10 @@ const displayProphets = (prophets) => {
 
     birthDate.textContent = ( `Date of Birth: ${prophet.birthdate}`);
     birthPlace.textContent = ('alt', `Place of Birth: ${prophet.birthplace}`);
-    numOfChild.textContent = ('alt', `Number of Children: ${prophet.numberofchildren}`);
+    
     len.textContent = ('alt', `Prophet Years: ${prophet.length}`);
     yOD.textContent = ('alt', `Year of death ${prophet.death}`);
-    fullName.textContent = ('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
+    fullName.textContent = ('alt', ` ${prophet.name} ${prophet.lastname}`);
     
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute("loading", "lazy");
