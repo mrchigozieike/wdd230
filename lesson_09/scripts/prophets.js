@@ -40,7 +40,7 @@ const displayProphets = (prophets) => {
     len.textContent = ('alt', `Prophet Years: ${prophet.length}`);
     yOD.textContent = ('alt', `Year of death ${prophet.death}`);
     fullName.textContent = ('alt', ` ${prophet.name} ${prophet.lastname}`);
-    
+    numOfChild.textContent = ('alt', `Number of children: ${prophet.numofchildren}`);
     portrait.setAttribute('src', prophet.imageurl);
     portrait.setAttribute("loading", "lazy");
     portrait.setAttribute('width', '340');
