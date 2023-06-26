@@ -1,59 +1,38 @@
-html {
-    font-family: 'ubuntu',sans-serif;
-  }
-  
-  table {
-    border-collapse: collapse;
-    border: 2px solid rgb(8, 4, 4);
-    letter-spacing: 1px;
-    font-size: 2rem;
-  }
-  @media (max-width: 480px) {
-      table {
-          font-size: 0.9em;
-      }
-      .big{
-          font-size: 1em;
-      }
-  }
-  .big {
-      font-size: 2.1em;
-  }
-  #lonly{
-      background-color: #628ca6 !important;
-      color: #fff !important;
-  }
-  .white th{
-    color:white;
-    background-color: #628ca6;
+:root {
+  --back: rgb(0, 0, 0);
+  --forelight: hsla(0, 0%, 100%, 1);
+  --border: hsl(0, 0%, 20%);
+  --borderlight: hsl(246, 61%, 45%);
+  --shadow: hsl(0, 0%, 50%);
+  --zebra: hsl(0, 0%, 93%, 1);
 }
-  td, th {
-    border: 1px solid #96b4c7;
-    padding: 10px 20px;
-  }
-  tr:last-child td:last-child{
-    background-color: #7fb9c2 !important;
-  }
-  th {
-    background-color: #7fb9c2;
-  }
-  
-  td {
-    text-align: center;
-  }
-  
-  tr:nth-child(even) td {
-    background-color: #e7ffed;
-  }
-  
-  tr:nth-child(odd) td {
-    background-color: #e7f0ed;
-  }
-  
-  caption {
-    padding: 10px;
-  }
-  
-  .container{
-      display:flex;
-  }
+
+table {
+  margin: 100px auto;
+  border: thin solid var(--border);
+  box-shadow: 0 0 7px var(--shadow);
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 7px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 1rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}
+
+thead tr:first-child th,
+th:empty {
+  background-color: var(--back);
+  color: var(--forelight);
+}
