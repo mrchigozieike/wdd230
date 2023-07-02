@@ -19,7 +19,7 @@ const temperature = parseFloat(document.querySelector("#temp").textContent);
 const windSpeed = parseFloat(document.querySelector("#wind").textContent);
 windchill(temperature, windSpeed);
 
-const url = "https://api.openweathermap.org/data/2.5/weather?id=6094817&units=imperial&appid=c4c85377ef6401c14d9c8acb15c857a3";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=8f775f4f608fe18d0e030e9dd8c7c309";
 
 
 async function apiFetch() {
