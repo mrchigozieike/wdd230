@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
+
+.ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header img {
+    border-radius: 30px;
+    max-width: 15%; 
+    margin-left: 25%;
+    
+    
+}
+/* Set the background of the header to blue */
+.header, footer {
+    color: white;
+    background-color:#1d4d72;
+    text-align: center; /* Center text within the header */
+    padding: 20px; /* Add some padding for better spacing */
+}
+h1{
+    margin-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+
+}
+h3{
+    padding: 8px;
+    color: white;
+    background-color:#1d4d72;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family:  monospace;
+}
+
+.title{
+    display: flex;
+    place-items: center;
+}
+.headtitle {
+    text-align: center;
+}
+
+.nav{  
+    
+    background-color: black;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    padding: 20px; 
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.nav a {
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.main {   
+padding-left: 10%;
+}
+
+.green.section {
+    display: grid; 
+    grid-area: footer;
+    place-items: center;    
+}
+
+ul {
+  list-style-type: none;  
+  padding: 0;
+}
+
+.flag img{
+    max-width: 10%;
+}

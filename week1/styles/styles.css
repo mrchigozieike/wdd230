@@ -1,0 +1,42 @@
+.parent {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto 1fr auto;
+    gap: 1px;
+    grid-template-areas: 
+        "header header header"
+        "nav nav nav"
+        "main main right"
+        "footer footer footer";
+}
+
+.pink.section {
+    background-color: #ffb4c1;
+    grid-area: header; /* Added grid area */
+    padding: 40px;
+}
+.lemon.section{
+    background-color: #b7ecdb;
+    grid-area: nav;  /* Added grid area */
+    padding: 10px;
+    padding-left: 40px;
+}
+
+.section.coral {
+    background-color: #ff7a58;
+    grid-area: main; /* Added grid area */
+    padding: 40px;
+    height: 400px;
+}
+
+.yellow.section {
+    background-color: yellow;
+    grid-area: right; /* Added grid area */
+    padding: 40px;
+}
+
+.green.section {
+    background-color: #f6ddb7;
+    grid-area: footer; /* Added grid area */
+    padding: 40px;
+}
