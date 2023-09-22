@@ -16,10 +16,13 @@ a {
     padding: 10px;
 }
 
-a:link,
+a:link{
+    color: black;
+}
 a:focus {
     background: #f1f1f1;
-    color: black;
+    
+    color: white;
     padding-right:  50px;
 }
 
