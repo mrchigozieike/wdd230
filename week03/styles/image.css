@@ -1,44 +1,14 @@
-.nav {
+.screenshot {
     display: flex;
     place-items: center;
     flex-direction: column;
-    padding: 20px;
-    font-family: 'Roboto Mono', monospace;
-    list-style-type: none; /* Added to remove bullets */
-}
-
-a {
-    flex: 1;
-    text-decoration: none;
-    text-align: left;
-    line-height: 3;
-    color: black;
-    padding: 10px;
-}
-
-a:link{
-    color: black;
-}
-a:focus {
-    background: #f1f1f1;
+    padding: 150px;
     
-    color: white;
-    padding-right:  50px;
 }
 
-a:visited {
-    color: #f1f1f1;
-}
-
-a:hover {
-    background: #04aa6d;
-}
-.nav-list {
-    list-style-type: none;
-    padding: 0; /* Remove default padding */
-}
 
 footer {
+    
     color: white;
     background-color:#1d4d72;
     text-align: center; /* Center text within the header */
