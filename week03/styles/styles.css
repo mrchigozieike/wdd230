@@ -7,12 +7,14 @@
 
 .header img {
     border-radius: 30px;
- 
+    max-width: 15%; 
+    margin-left: 25%;
+    
     
 }
 .images img{
     border-radius: 30px;
-    width: 30%;
+    width: 50%;
 }
 /* Set the background of the header to blue */
 .header, footer {
@@ -22,7 +24,7 @@
     padding: 20px; /* Add some padding for better spacing */
 }
 h1{
-   
+    
     margin-left: 20px;
     font-family: 'Roboto Mono', monospace;
 
