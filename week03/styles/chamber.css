@@ -113,10 +113,12 @@ ul {
 }
 
 .primary {
+  color: #fff;
   background-color: #1d4d72;
 }
 
 .secondary {
+  color: #fff;
   background-color: black;
 }
 
@@ -126,10 +128,5 @@ ul {
 
 .accent2 {
   background-color: #e4ed14;
-
-  p.colored {
-    background-color: var(--paragraph-background-color);
-    color: var(--paragraph-color-on-color);
-  }
 
 }
