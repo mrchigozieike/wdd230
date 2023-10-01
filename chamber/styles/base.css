@@ -38,7 +38,9 @@
     background-color: #FC0;
     justify-content: space-between;
 }
-
+hr{
+    color: #fff;
+}
 .one > div {
     flex: 0 0 70%; /* 70% width for the first div */
 }
@@ -64,7 +66,7 @@
     justify-content: center;
     justify-content: space-between;
     border-color: #721d4c;
-    border: solid;
+   
 }
 .cards{
     width: 25%;
