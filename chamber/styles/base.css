@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
+
+.ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header img {
+    border-radius: 30px;
+   
+}
+.events::before {
+    content: url('../../media/examples/fire.png');
+    margin-right: 6px;
+    text-shadow: #FC0 1px 0 10px;
+  }
+  
+.weather::before {
+    content: '⛅ ';
+    text-shadow: #FC0 1px 0 10px;
+  }
+.social{
+    padding-left: 100px;
+}
+.images img{
+    border-radius: 30px;
+    width: 30%;
+}
+/* Set the background of the header to blue */
+.header{
+    color: white;
+    background-color:#1d4d72;
+     
+}
+.one {
+    display: flex;
+    padding-left: 80px;
+    background-color: #FC0;
+    justify-content: space-between;
+}
+
+.one > div {
+    flex: 0 0 70%; /* 70% width for the first div */
+}
+
+.one > div:nth-child(2) {
+    flex: 0 0 30%; /* 30% width for the second div */
+}
+   
+.two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-color: #721d4c;
+    border: solid;
+   
+}
+.three{    
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    border-color: #721d4c;
+    border: solid;
+}
+.cards{
+    width: 25%;
+    outline: thick double #32a1ce;
+    padding: 30px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 5px;
+}
+button{
+    display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+    margin-top: 70px;
+	color: #fff;
+	position: absolute;
+    top: 15rem;
+    left: 5rem;
+    background-color: #1d4d72;
+    position: absolute;
+}
+
+h1{   
+    margin-left: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+h3{
+    padding-left: 8px;  
+    padding-right: 8px;  
+    font-family:  monospace;
+}
+h6{
+    padding-top: 0px;
+}
+.hero img{
+    width: 100%;
+}
+.title{
+    display: flex;
+    place-items: center;
+}
+.headtitle {
+    text-align: center;
+}
+.nav{  
+    
+    background-color: rgb(41, 24, 24);
+
+    padding: 20px; 
+    font-family: 'Roboto Mono', monospace;
+    
+}
+
+.nav a {
+    margin-top: 0px;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Adjust spacing between links */
+}
+
+.main {   
+padding-left: 10%;
+}
+
+ul {
+  list-style-type: none;  
+  padding: 0;
+}
+
+.flag a{
+    color: white;
+}
+footer {
+    color: white;
+    background-color:#1d4d72;     
+   
+}
+.details{    
+    display: grid;
+    place-items: center;
+}
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+    margin-top: 20px;
+	color: #000;
+	position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+
+.nav li {
+	display: none;
+}
+
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "❌";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.nav {
+		display: flex;
+	}
+	.nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.nav a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
