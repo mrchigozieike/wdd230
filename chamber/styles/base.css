@@ -8,9 +8,6 @@ p {
     counter-increment: paras;
   }
   
-  p::before {
-   content: '🔸' counter(paras) ': ';
-  }
 
 .header img {
     border-radius: 30px;
