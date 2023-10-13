@@ -59,8 +59,12 @@ hr{
     flex-wrap: wrap;
     justify-content: center;
     border-color: #721d4c;
-    border: solid;
-   
+    padding-top: 30px;
+    padding-bottom: 30px;   
+}
+.two p{
+    text-align: right;
+  
 }
 .three{    
     padding-left: 50px;
@@ -74,9 +78,11 @@ hr{
    
 }
 .cards{
-    width: 25%;
-    outline: thick double #32a1ce;
-    padding: 30px;
+    width: 250px;
+    
+    box-shadow: 0px 0px lightblue, -8px 0 .5em lightblue;
+    padding-left: 30px;
+    padding-right: 10px;
     padding-top: 0%;
     padding-bottom: 0%;
     margin: 5px;
