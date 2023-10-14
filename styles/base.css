@@ -11,8 +11,8 @@
     margin-top: 20px;
 	color: #000;
 	position: absolute;
-  top: 1rem;
-  right: 1rem;
+    top: 1rem;
+	right: 1rem;
 }
 
 #menu::before {

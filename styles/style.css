@@ -5,6 +5,8 @@
     grid-template-rows: auto 1fr auto;
 }
 
+
+
 .header img {
     border-radius: 30px;
     margin-left: 20px;
@@ -41,10 +43,8 @@ h3{
     text-align: center;
 }
 
-.nav{  
-    
+.nav{      
     background-color: rgb(41, 24, 24);
-
     padding: 20px; 
     font-family: 'Roboto Mono', monospace;
     
@@ -76,4 +76,15 @@ ul {
 
 .flag a{
     color: white;
+}
+
+
+
+
+#mode {
+	position: absolute;
+	top: 8rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
 }
