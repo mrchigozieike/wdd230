@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lazy loading</title>
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/image.css">
+    <link rel="stylesheet" href="styles/lazyloading.css">
 </head>
 <body>
-    <div class="screenshot">
-      
+
+
+    <div class="image-container">
         <picture>
-            
-            <img src="images/landscape.webp" alt="A landscape picture" width="3956px" height="2633px">
+            <source srcset="placeholder.webp" type="image/webp">
+            <img 
+                src="images/placeholder.webp" 
+                data-srcset="images/aba-nigeria-temple-lds-248708-high-res-print.webp" 
+                alt="Main Image" 
+                class="lazy-load"
+                width="800" 
+                height="400"
+            >
         </picture>
     </div>
+
 </body>
 
 <footer>

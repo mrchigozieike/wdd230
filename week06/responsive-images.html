@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/image.css">
+    <title>responsive-images</title>
+    <link rel="stylesheet" href="styles/responsive-images.css">
 </head>
 <body>
     <div class="screenshot">
       
         <picture>
-            
-            <img src="images/landscape.webp" alt="A landscape picture" width="3956px" height="2633px">
-        </picture>
+            <source srcset="images/small.webp" media="(max-width: 600px)">
+            <source srcset="images/medium.webp" media="(max-width: 1000px)">
+            <img src="images/large.webp" alt="ABA Temple">
+          </picture>
     </div>
 </body>
 

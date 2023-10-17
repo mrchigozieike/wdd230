@@ -1,0 +1,16 @@
+.screenshot {
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+ 
+    
+}
+
+
+footer {
+    
+    color: white;
+    background-color:#1d4d72;
+    text-align: center; /* Center text within the header */
+    padding: 20px; /* Add some padding for better spacing */
+}
