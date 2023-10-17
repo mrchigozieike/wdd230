@@ -17,7 +17,7 @@ button{
 	position: absolute;
     top: 15rem;
     left: 5rem;
-    background-color: #1d4d72;
+    background-color: yellowgreen;
     position: absolute;
 }
 
@@ -76,6 +76,8 @@ h3{
 .main {   
 padding-left: 10%;
 background-color: yellowgreen;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 
 .green.section {
@@ -92,6 +94,7 @@ ul {
 }
 
 .flag a{
+ 
     color: white;
 }
 
