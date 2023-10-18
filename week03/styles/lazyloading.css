@@ -1,9 +1,5 @@
-.screenshot {
-    display: flex;
-    place-items: center;
-    flex-direction: column;
-    padding: 150px;
-    
+body {
+padding: 10px;
 }
 
 
@@ -17,16 +13,10 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
+.headtitle{
+    display: grid;
+    place-items: center;
+}
 
 
 
