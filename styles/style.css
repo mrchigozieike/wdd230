@@ -27,7 +27,11 @@ button{
     
     
 }
+.hero{
 
+    display: grid;
+    place-items: center;
+  }
 /* Set the background of the header to blue */
 .header, footer {
     color: white;
@@ -44,8 +48,7 @@ h3{
     padding: 8px;
     color: white;
     background-color:#1d4d72;
-    margin-left: 10px;
-    margin-right: 10px;
+
     font-family:  monospace;
 }
 
@@ -97,9 +100,6 @@ ul {
  
     color: white;
 }
-
-
-
 
 #mode {
 	position: absolute;
