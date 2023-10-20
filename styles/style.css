@@ -17,7 +17,7 @@ button{
 	position: absolute;
     top: 15rem;
     left: 5rem;
-    background-color: yellowgreen;
+    background-color: rgb(29, 37, 11);
     position: absolute;
 }
 
@@ -78,10 +78,10 @@ h3{
 
 .main {   
 padding-left: 10%;
-background-color: yellowgreen;
 padding-top: 10px;
 padding-bottom: 10px;
 }
+
 
 .green.section {
     display: grid; 
