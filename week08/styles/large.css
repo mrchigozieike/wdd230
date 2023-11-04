@@ -1,0 +1,10 @@
+@media screen and (min-width: 700px){
+    .nav {  
+        background-color: rgb(41, 24, 24);
+        display: flex;    
+        padding: 20px; 
+        font-family: 'Roboto Mono', monospace;
+        
+    }
+    
+}
