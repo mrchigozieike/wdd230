@@ -82,6 +82,18 @@ padding-top: 10px;
 padding-bottom: 10px;
 }
 
+.main-bi {
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+   
+}
 
 .green.section {
     display: grid; 

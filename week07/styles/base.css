@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
 
+.ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
 
 #mode {
 	position: absolute;
@@ -8,7 +12,6 @@
 	font-size: 3rem;
 	cursor: pointer;
 }
-
 
 .header img {
     border-radius: 30px;
@@ -39,20 +42,22 @@
      
 }
 
+.one{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: minmax(30%, 70%) 1fr;
+}
+.one div img{
+    padding: 10px;
+}
+
+
 hr{
     width: 80%;
     color: #fff;
 }
-.one > div {
-   
-    flex: 0 0 70%; /* 70% width for the first div */
-}
 
-.one > div:nth-child(2) {
-    padding: 10px;
-    flex: 0 0 30%; /* 30% width for the second div */
-}
-   
 .two{
     display: flex;
     flex-wrap: wrap;
