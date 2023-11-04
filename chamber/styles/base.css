@@ -43,16 +43,12 @@ hr{
     width: 80%;
     color: #fff;
 }
-.one > div {
-   
-    flex: 0 0 70%; /* 70% width for the first div */
+.one{
+    padding-left: 100px;
+    padding-right: 100px;
+    display: grid;
+    grid-template-columns: minmax(30%, 70%) 1fr;
 }
-
-.one > div:nth-child(2) {
-    padding: 10px;
-    flex: 0 0 30%; /* 30% width for the second div */
-}
-   
 .two{
     display: flex;
     flex-wrap: wrap;
