@@ -41,7 +41,9 @@
     background-color:#1d4d72;
      
 }
-
+figcaption{
+    text-align: center;
+}
 .one{
     padding-left: 100px;
     padding-right: 100px;
@@ -57,7 +59,9 @@ hr{
     width: 80%;
     color: #fff;
 }
-
+.one div h2{
+    text-align: center;
+}
 .two{
     display: flex;
     flex-wrap: wrap;
