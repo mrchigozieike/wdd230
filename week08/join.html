@@ -40,6 +40,94 @@
       <li><a href="/python/byui.html">Join</a></li>
       <li><a href="/python/">Scripture</a></li>
     </ul>
+    <section class="one">
+      <div>
+        <h2>Membership Form</h2>
+    
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant Information</legend>
+        
+                <label for="fname">First Name*</label>
+                <input type="text" id="fname" name="fname" required>
+        
+                <label for="lname">Last Name*</label>
+                <input type="text" id="lname" name="lname" required>
+        
+        
+                <label for="email">Email Address*</label>
+                <input type="email" id="email" name="email" required placeholder="example@email.com">
+        
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})" title="Password must contain at least one lowercase letter, one uppercase letter, one numeric digit, one special character, and be at least 8 characters long" required>
+
+                <label for="phone_number">Mobile Phone Number*</label>
+                <input type="number" id="phone_number" name="phone_number" required>
+                <label for="userType">Are you a personal user or representing an organization?</label>
+                <select id="userType" name="userType">
+                  <option value="personal">Personal</option>
+                  <option value="organization">Organization</option>
+                </select>
+                <label for="organization_name">Business/Organization Name*</label>
+                <input type="text" id="organization_name" name="organization_name" min="0" step="1" required>
+        
+                <label for="membership_level">Membership Level</label>
+                <select name="membership_level" id="membership_level">
+                    <option value="">Please Select a Level</option>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+        
+                <label for="organization_description">Business/Organization Description:</label>
+                <textarea name="organization_description" id="organization_description"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
+            </fieldset>
+        
+            <input id="btn" type="submit" value="Join The Chamber!">
+        </form>
+      </div>
+      <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th id="header" colspan="4" scope="colgroup">ACME Wildwest Services</th>
+            </tr>
+            <tr>
+                <th id="blank"></th>
+                <th>Basic</th>
+                <th>Premium</th>
+                <th>Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature 1</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 2</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 3</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+
+
+
+
     <footer class="footer">
         <section class="three">
           <div>
