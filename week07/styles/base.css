@@ -13,21 +13,7 @@
 	cursor: pointer;
 }
 
-/* Add background and set initial hover state for figures */
-figure {
-    background-color: #f0f0f0; /* Change to desired background color */
-    transition: background-color 0.3s; /* Add smooth transition effect */
-  }
-  
-  /* Add hover state for figures */
-  figure:hover {
-    background-color: #ccc; /*  hover background color */
-  }
-  
-  /* Adjust padding to create spacing around images */
-  figure img {
-    padding: 10px;
-  }
+
 .header img {
     border-radius: 30px;
     margin-left: 30px;
