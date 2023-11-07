@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="style/directory.css">
   </head>
   <body>
     <main>
@@ -41,57 +42,17 @@
       <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
     </ul>
-    <div class="hero">
-      <picture>
-        <source srcset="images/small.webp" media="(max-width: 600px)">
-        <source srcset="images/medium.webp" media="(max-width: 1000px)">
-        <img src="images/large.webp" alt="Chamber of Commerce hero image">
-      </picture>
-    </div>
-    
-    <button>Join The Chamber</button>
-    <section class="one">
-      <div>
-        <h2>Events</h2>
-        
-        <h3>Ribbon Cutting - The Diam💎nd Shack</h3>
-       
-        <p>
-          Join us for the grand opening of the Diamond Shack, Thursday at 1:00
-          p.m.
-        </p>
+    <main id="dir-main">
+      <div class="menu">
+          <button id="grid">⏹️Grid</button>
+          <button id="list">📄List</button>
       </div>
-      <div>
-        <h2 class="temperature">Weather</h2>
-      
-        <p>Temperature: <span id="temperature">40</span>°F</p>
-        <p>Wind Speed: <span id="windSpeed">10</span>mph</p>
-        <p>Wind Chill: <span id="windChill"></span></p>
-      </div>
-    </section>
-    <section class="two">
-      <div class="cards">
-        <h3>🚚Thankful Transport</h3>
-        <h6>"We get ther for you"</h6>
-        <p>hello@Thankfultranspot.com</p>
-        <p>+99-9999-999</p>
-        <p>Website</p>
-      </div>
-      <div class="cards">
-        <h3>👨‍💻Code Primera</h3>
-        <h6>"We get ther for you"</h6>
-        <p>hello@cdeprimera.com</h6>
-        <p>+99-9999-999</h6>
-        <p>Website</h6>
-      </div>
-      <div class="cards">
-        <h3>🌳Buid A Treefort</h3>
-        <h6>"We get ther for you"</h6>
-        <p>build@Treefort.com</p>
-        <p>+99-9999-999</p>
-        <p>Website</p>
-      </div>
-    </section>
+      <hr>
+      <article>
+          <h2>Business Directory</h2>
+          <div class="grid" id="article"></div>
+      </article>
+    </main>
     <footer class="footer">
       <section class="three">
         <div>
@@ -124,7 +85,7 @@
     </footer>
 
     <script src="scripts/script.js" async defer></script>
-    <script src="scripts/windchill.js" async defer></script>
+    <script src="scripts/directory.js" async defer></script>
   </main>
   </body>
 </html>

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "🚚Thankful Transport",
+    "address": "123 Main Street, Cityville, State, Country",
+    "phone": "+1-555-123-4567",
+    "website": "www.companya.com",
+    "image": "companya.jpg",
+    "membershipLevel": "Gold",
+    "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "name": "👨‍💻Code Primera",
+    "address": "456 Oak Avenue, Townsville, State, Country",
+    "phone": "+1-555-987-6543",
+    "website": "www.companyb.com",
+    "image": "companyb.jpg",
+    "membershipLevel": "Silver",
+    "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  },
+  {
+    "name": "🌳Buid A Treefort",
+    "address": "789 Maple Drive, Villageton, State, Country",
+    "phone": "+1-555-321-7890",
+    "website": "www.companyc.com",
+    "image": "companyc.jpg",
+    "membershipLevel": "Bronze",
+    "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+  },
+  {
+    "name": "Company D",
+    "address": "101 Pine Road, Hamletville, State, Country",
+    "phone": "+1-555-555-5555",
+    "website": "www.companyd.com",
+    "image": "companyd.jpg",
+    "membershipLevel": "Platinum",
+    "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore."
+  },
+  {
+    "name": "Company E",
+    "address": "202 Cedar Lane, Countryside, State, Country",
+    "phone": "+1-555-888-1234",
+    "website": "www.companye.com",
+    "image": "companye.jpg",
+    "membershipLevel": "Gold",
+    "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "name": "Company F",
+    "address": "303 Birch Boulevard, Suburbia, State, Country",
+    "phone": "+1-555-777-9999",
+    "website": "www.companyf.com",
+    "image": "companyf.jpg",
+    "membershipLevel": "Silver",
+    "otherInfo": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+  },
+  {
+    "name": "Company G",
+    "address": "404 Spruce Street, Metropolis, State, Country",
+    "phone": "+1-555-444-3333",
+    "website": "www.companyg.com",
+    "image": "companyg.jpg",
+    "membershipLevel": "Bronze",
+    "otherInfo": "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+  }
+]
