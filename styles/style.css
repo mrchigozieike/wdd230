@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
 
-.ex4 .parent {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
+
 
 .one{
     padding-left: 100px;
@@ -46,6 +43,8 @@ button{
     padding: 20px; /* Add some padding for better spacing */
 }
 h1{
+    display: grid;
+    place-items: center;
     margin-left: 20px;
     font-family: 'Roboto Mono', monospace;
 
@@ -82,12 +81,23 @@ h3{
     margin: 0 10px; /* Adjust spacing between links */
 }
 
-.main {   
-padding-left: 10%;
-padding-top: 10px;
-padding-bottom: 10px;
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+.info{
+    padding: 30px;
+    padding-top: 0;
+    
+    background-color: #f0f0f0; /* Change to desired background color */
+    transition: background-color 0.3s;
+}
+.activities{
+    padding-right: 10px;
+}
 .main-bi {
     padding-left: 10%;
     padding-top: 10px;
