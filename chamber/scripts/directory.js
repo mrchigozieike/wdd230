@@ -1,4 +1,4 @@
-const contentURL = "https://github.com/mrchigozieike/wdd230/chamber/data/members.json";
+const contentURL = "https://mrchigozieike.gihub.io/wdd230/chamber/data/members.json";
 
 const cards = document.querySelector('#article');
 const btn = document.querySelector('#grid-btn');
