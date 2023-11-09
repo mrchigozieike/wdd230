@@ -1,11 +1,12 @@
 {
-  "organizations": [
+  "organizations":
+   [
       {
           "name": "🚚Thankful Transport",
           "phone": "+1-555-987-6543",
           "address": "Floor 1000, Urithiru, Roshar, Owerri",
           "url": "www.companyb.com",
-          "img": "https://1.bp.blogspot.com/_7tumTwbKSn0/R6347iycQJI/AAAAAAAAAAk/8kZYM16SB7c/s320/flor2+png.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo00.png",
           "level": "Silver"
       },
       {
@@ -13,15 +14,15 @@
           "phone": "+1-555-321-7890",
           "address": "#14 Mbieri, Owerri",
           "url": "www.codeprimera.com",
-          "img": "http://bp1.blogger.com/_7tumTwbKSn0/R7AAQyycQKI/AAAAAAAAAAs/bfjB70uJyxQ/s1600/martinipng.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo01.png",
           "level": "Bronze"
       },
       {
           "name": "🌳Buid A Treefort",
-          "phone": "9901112345",
+          "phone": "+1-555-321-7890",
           "address": "Nwaturuocha, Ikenegbu, Owerri",
           "url": "www.buildatreefort",
-          "img": "http://bp3.blogger.com/_7tumTwbKSn0/R7AApSycQLI/AAAAAAAAAA0/JZcK7a8DSGE/s1600/uvaspng.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo02.png",
           "level": "Silver"
       },
       {
@@ -29,7 +30,7 @@
           "phone": "0+1-555-321-78905",
           "address": "Apartment 8, Obi drive, Owerri",
           "website": "www.companyd.com",
-          "img": "http://bp1.blogger.com/_KGRQ22gnphU/R7k0xJ2GOYI/AAAAAAAAAFI/AKexYQNKDg8/s1600/estrella1png.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo03.png",
           "level": "Gold"
       },
       {
@@ -37,7 +38,7 @@
           "phone": "+1-555-888-1234",
           "address": "72, Ikom Road, Owerri",
           "website": "www.companye.com",
-          "img": "https://1.bp.blogspot.com/_7tumTwbKSn0/R8ElayycQNI/AAAAAAAAABE/BaeFDqvrL9I/s320/sports2png.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo04.png",
           "level": "Bronze"
       },
       {
@@ -45,7 +46,7 @@
           "phone": "+1-555-777-9999",
           "address": "12 City scape district, Owerri",
           "website": "www.companyf.com",
-          "img": "http://bp1.blogger.com/_7tumTwbKSn0/R8EkJiycQMI/AAAAAAAAAA8/ZjMpP_hZ2O4/s1600/sports1png.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo05.png",
           "level": "Non-Profit"
       },
       {
@@ -53,8 +54,64 @@
           "phone": "+1-555-444-3333",
           "address": "155 Ukpa Drive, Owerri",
           "website": "www.companyg.com",
-          "img": "http://bp0.blogger.com/_7tumTwbKSn0/R-ONfI33CDI/AAAAAAAAABs/bg-qEZ4Odz4/s1600/circulopng.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo06.png",
           "level": "Bronze"
-      }
-  ]
+      } ,
+      {
+        "name": "🚚Thankful Transport",
+        "phone": "+1-555-987-6543",
+        "address": "Floor 1000, Urithiru, Roshar, Owerri",
+        "url": "www.companyb.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo07.png",
+        "level": "Silver"
+    },
+    {
+        "name": "👨‍💻Code Primera",
+        "phone": "+1-555-321-7890",
+        "address": "#14 Mbieri, Owerri",
+        "url": "www.codeprimera.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo08.png",
+        "level": "Bronze"
+    },
+    {
+        "name": "🌳Buid A Treefort",
+        "phone": "+1-555-321-7890",
+        "address": "Nwaturuocha, Ikenegbu, Owerri",
+        "url": "www.buildatreefort",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo09.png",
+        "level": "Silver"
+    },
+    {
+        "name": "Veritas Medicine",
+        "phone": "0+1-555-321-78905",
+        "address": "Apartment 8, Obi drive, Owerri",
+        "website": "www.companyd.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo10.png",
+        "level": "Gold"
+    },
+    {
+        "name": "The Wave",
+        "phone": "+1-555-888-1234",
+        "address": "72, Ikom Road, Owerri",
+        "website": "www.companye.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo11.png",
+        "level": "Bronze"
+    },
+    {
+        "name": "The Caring Place",
+        "phone": "+1-555-777-9999",
+        "address": "12 City scape district, Owerri",
+        "website": "www.companyf.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo12.png",
+        "level": "Non-Profit"
+    },
+    {
+        "name": "Metropolis Guild",
+        "phone": "+1-555-444-3333",
+        "address": "155 Ukpa Drive, Owerri",
+        "website": "www.companyg.com",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo13.png",
+        "level": "Bronze"
+    } 
+    ]
 }
