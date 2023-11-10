@@ -6,7 +6,7 @@
           "phone": "+1-555-987-6543",
           "address": "Floor 1000, Urithiru, Roshar, Owerri",
           "url": "www.companyb.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo00.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo00.webp",
           "level": "Silver"
       },
       {
@@ -14,7 +14,7 @@
           "phone": "+1-555-321-7890",
           "address": "#14 Mbieri, Owerri",
           "url": "www.codeprimera.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo01.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo1.webp",
           "level": "Bronze"
       },
       {
@@ -22,7 +22,7 @@
           "phone": "+1-555-321-7890",
           "address": "Nwaturuocha, Ikenegbu, Owerri",
           "url": "www.buildatreefort",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo02.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo02.webp",
           "level": "Silver"
       },
       {
@@ -30,7 +30,7 @@
           "phone": "0+1-555-321-78905",
           "address": "Apartment 8, Obi drive, Owerri",
           "website": "www.companyd.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo03.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo03.webp",
           "level": "Gold"
       },
       {
@@ -38,7 +38,7 @@
           "phone": "+1-555-888-1234",
           "address": "72, Ikom Road, Owerri",
           "website": "www.companye.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo04.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo04.webp",
           "level": "Bronze"
       },
       {
@@ -46,7 +46,7 @@
           "phone": "+1-555-777-9999",
           "address": "12 City scape district, Owerri",
           "website": "www.companyf.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo05.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo05.webp",
           "level": "Non-Profit"
       },
       {
@@ -54,7 +54,7 @@
           "phone": "+1-555-444-3333",
           "address": "155 Ukpa Drive, Owerri",
           "website": "www.companyg.com",
-          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo06.png",
+          "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo06.webp",
           "level": "Bronze"
       } ,
       {
@@ -62,7 +62,7 @@
         "phone": "+1-555-987-6543",
         "address": "Floor 1000, Urithiru, Roshar, Owerri",
         "url": "www.companyb.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo07.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo07.webp",
         "level": "Silver"
     },
     {
@@ -70,7 +70,7 @@
         "phone": "+1-555-321-7890",
         "address": "#14 Mbieri, Owerri",
         "url": "www.codeprimera.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo08.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo08.webp",
         "level": "Bronze"
     },
     {
@@ -78,7 +78,7 @@
         "phone": "+1-555-321-7890",
         "address": "Nwaturuocha, Ikenegbu, Owerri",
         "url": "www.buildatreefort",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo09.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo09.webp",
         "level": "Silver"
     },
     {
@@ -86,7 +86,7 @@
         "phone": "0+1-555-321-78905",
         "address": "Apartment 8, Obi drive, Owerri",
         "website": "www.companyd.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo10.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo10.webp",
         "level": "Gold"
     },
     {
@@ -94,7 +94,7 @@
         "phone": "+1-555-888-1234",
         "address": "72, Ikom Road, Owerri",
         "website": "www.companye.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo11.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo11.webp",
         "level": "Bronze"
     },
     {
@@ -102,7 +102,7 @@
         "phone": "+1-555-777-9999",
         "address": "12 City scape district, Owerri",
         "website": "www.companyf.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo12.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo12.webp",
         "level": "Non-Profit"
     },
     {
@@ -110,7 +110,7 @@
         "phone": "+1-555-444-3333",
         "address": "155 Ukpa Drive, Owerri",
         "website": "www.companyg.com",
-        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo13.png",
+        "img": "https://mrchigozieike.github.io/wdd230/chamber/data/logo13.webp",
         "level": "Bronze"
     } 
     ]

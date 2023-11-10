@@ -78,6 +78,7 @@ hr{
     color: #fff;
 }
 .one{
+    padding-left: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
