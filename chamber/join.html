@@ -1,167 +1,162 @@
 <!DOCTYPE html>
 
-<html lang="en-us">
-  <head>
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Chamber Of Commerce</title>
-    <meta name="description" content="Welcome to the Owerri Chamber Of Commerce. Discover events, businesses, and opportunities in Owerri, Imo State. Join us in celebrating the grand opening of The Diamond Shack. Explore our directory and get involved in the community.">
+<html lang="en-us">      
+    <head>
+        
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>WDD 230: Web Frontend Development course assignment portal</title>
+        <meta name="description" content="Welcome to Chigozie Henry Ike's Web Frontend Development course assignment portal. Explore lessons, assignments, and projects related to web development and design principles." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/large.css">
+    </head>
+    <body>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles/normalize.css" />
-    <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/medium.css" />
-    <link rel="stylesheet" href="styles/large.css" />
-  </head>
-  <body>
-    <main>
-    <div class="header">
-      <div class="title">
-        <img class="logo" src="images/chamberlogo.webp"  alt="chamber logo" />
+        
+        
+        <div class="header">
+            <div class="title">
+              
+                <img src="images/chamberlogo.webp" alt="chamber logo" height="144" width="108">
+                <h1>Chigozie Henry Ike</h1>
+                <div id="mode">
+                    🕶️
+                </div>
+            </div>
 
-        <div class="social">
-          <img src="images/twitter.png" alt="social media icon" />
-          <img src="images/facebook.png" alt="social media icon" />
         </div>
-        <h1>Owerri Chamber Of Commerce</h1>
-        <div id="mode">
-          🕶️          
-        </div>
-      </div>
-    </div>
-    <a id="menu" href="#"></a>
-
-    <ul class="nav">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="/week03/chamber-site-plan.html">Site Plan</a></li>
-      <li><a href="discover.html">Discover</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-    </ul>
-    <section class="one">
-      <div>
-        <h2>Membership Form</h2>
+        <a id="menu" href="#"></a>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/week03/chamber-site-plan.html">Site Plan</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+        </ul>
+        <section class="one">
+          <div>
+            <h2>Membership Form</h2>
+        
+            
+            <form action="thankyou.html" method="get">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+            
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="fname" required>
+            
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lname" required>
+            
+            
+                    <label for="email">Email Address*</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+            
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})" title="Password must contain at least one lowercase letter, one uppercase letter, one numeric digit, one special character, and be at least 8 characters long" required>
     
-        
-        <form action="thankyou.html" method="get">
-            <fieldset>
-                <legend>Applicant Information</legend>
-        
-                <label for="fname">First Name*</label>
-                <input type="text" id="fname" name="fname" required>
-        
-                <label for="lname">Last Name*</label>
-                <input type="text" id="lname" name="lname" required>
-        
-        
-                <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" required placeholder="example@email.com">
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})" title="Password must contain at least one lowercase letter, one uppercase letter, one numeric digit, one special character, and be at least 8 characters long" required>
-
-                <label for="phone_number">Mobile Phone Number*</label>
-                <input type="number" id="phone_number" name="phone_number" required>
-                <label for="userType">Are you a personal user or representing an organization?</label>
-                <select id="userType" name="userType">
-                  <option value="personal">Personal</option>
-                  <option value="organization">Organization</option>
-                </select>
-                <label for="organization_name">Business/Organization Name*</label>
-                <input type="text" id="organization_name" name="organization_name" min="0" step="1" required>
-        
-                <label for="membership_level">Membership Level</label>
-                <select name="membership_level" id="membership_level">
-                    <option value="">Please Select a Level</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-        
-                <label for="organization_description">Business/Organization Description:</label>
-                <textarea name="organization_description" id="organization_description"></textarea>
-
-                <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
-            </fieldset>
-        
-            <input id="btn" type="submit" value="Join The Chamber!">
-        </form>
-      </div>
-      <table>
-        <caption>Table 1: Account Feature Comparison</caption>
-        <thead>
-            <tr>
-                <th id="header" colspan="4" scope="colgroup">ACME Wildwest Services</th>
-            </tr>
-            <tr>
-                <th id="blank"></th>
-                <th>Basic</th>
-                <th>Premium</th>
-                <th>Deluxe</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Feature 1</td>
-                <td>✔️</td>
-                <td>✔️</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Feature 2</td>
-                <td>❌</td>
-                <td>✔️</td>
-                <td>✔️</td>
-            </tr>
-            <tr>
-                <td>Feature 3</td>
-                <td>❌</td>
-                <td>❌</td>
-                <td>✔️</td>
-            </tr>
-        </tbody>
-    </table>
-    </section>
-
-
-
-
-    <footer class="footer">
-        <section class="three">
-          <div>
-            <picture>
-            <img src="images/chamberlogo.webp" alt="chamberlogo">
-          </picture>
+                    <label for="phone_number">Mobile Phone Number*</label>
+                    <input type="number" id="phone_number" name="phone_number" required>
+                    <label for="userType">Are you a personal user or representing an organization?</label>
+                    <select id="userType" name="userType">
+                      <option value="personal">Personal</option>
+                      <option value="organization">Organization</option>
+                    </select>
+                    <label for="organization_name">Business/Organization Name*</label>
+                    <input type="text" id="organization_name" name="organization_name" min="0" step="1" required>
+            
+                    <label for="membership_level">Membership Level</label>
+                    <select name="membership_level" id="membership_level">
+                        <option value="">Please Select a Level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+            
+                    <label for="organization_description">Business/Organization Description:</label>
+                    <textarea name="organization_description" id="organization_description"></textarea>
+    
+                    <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
+                </fieldset>
+            
+                <input id="btn" type="submit" value="Join The Chamber!">
+            </form>
           </div>
-          <div>
-            <h5>Owerri Chamber of Commerce</h5>
-            <p>Plot 1242 akwakuma oweeri</p>
-            <h5>NG</h5>
-          </div>
-          <div class="flag">
-            <h6>+234-8063365400</h6>
-            <p>info@owerricc.com</p>
-            🚩
-            <a href="https://maps.app.goo.gl/AiftNg5YqBniFoby9">Map location</a>
-          </div>
+          <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th id="header" colspan="4" scope="colgroup">ACME Wildwest Services</th>
+                </tr>
+                <tr>
+                    <th id="blank"></th>
+                    <th>Basic</th>
+                    <th>Premium</th>
+                    <th>Deluxe</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Feature 1</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Feature 2</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <td>Feature 3</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+            </tbody>
+        </table>
         </section>
-        <section class="details">
-          <hr>
-          <h5>
-            &copy; <span id="year"></span> | Chigozie Henry Ike | date:
-            <span class="day"></span>/<span class="month"></span>/<span
-              id="currentyear"
-            ></span>
-          </h5>
+
+        <footer class="footer">
+            <section class="three">
+              <div>
+                <picture>
+                <img src="images/chamberlogo.webp" alt="chamberlogo">
+              </picture>
+              </div>
+              <div>
+                <h5>Owerri Chamber of Commerce</h5>
+                <p>Plot 1242 akwakuma oweeri</p>
+                <h5>NG</h5>
+              </div>
+              <div class="flag">
+                <h6>+234-8063365400</h6>
+                <p>info@owerricc.com</p>
+                🚩
+                <a href="https://maps.app.goo.gl/AiftNg5YqBniFoby9">Map location</a>
+              </div>
+            </section>
+            <section class="details">
+              <hr>
+              <h5>
+                &copy; <span id="year"></span> | Chigozie Henry Ike | date:
+                <span class="day"></span>/<span class="month"></span>/<span
+                  id="currentyear"
+                ></span>
+              </h5>
+              
+            </section>
+          </footer>        
           
-        </section>
-      </footer>
-
-    <script src="scripts/script.js" async defer></script>
-    <script src="scripts/windchill.js" async defer></script>
-  </main>
-  </body>
+        <script src="scripts/script.js" async defer></script>
+        <script src="scripts/mode.js" async defer></script>
+        </main>
+    </body>
 </html>

@@ -1,23 +1,22 @@
+ /* DIRECTORY PAGE */
+ #dir-main {
+    display: block;
+}
 
-    /* DIRECTORY PAGE */
-    #dir-main {
-        display: block;
-    }
+div#article.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: .4rem;
+}
 
-    div#article.grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: .4rem;
-    }
+.list section img {
+    width: 100px;
+    height: auto;
+}
 
-    .list section img {
-	    width: 100%;
-        height: auto;
-    }
-
-    .list section {
-        display: grid;
-	    grid-template-columns: 1fr 1fr 6rem 1fr 6rem;
-	    margin: 0;
-	    padding: 0.75rem;
-    }
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6rem 1fr 6rem;
+    margin: 0;
+    padding: 0.75rem;
+}
