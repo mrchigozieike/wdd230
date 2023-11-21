@@ -78,24 +78,13 @@ hr{
     color: #fff;
 }
 .one{
-    padding-left: 100px;
+ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-.two{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-color: #721d4c;
-    padding-top: 30px;
-    padding-bottom: 30px;   
-}
-.two h6{
-    text-align: right;
-    padding-right: 20px;
     
 }
+
 .three{    
     padding-left: 50px;
     padding-right: 50px;
@@ -176,6 +165,10 @@ h3{
     padding-left: 8px;  
     padding-right: 8px;  
     font-family:  monospace;
+}
+h2{
+    display: grid;
+    text-align: center;
 }
 h6{
     padding-top: 0px;
@@ -425,11 +418,17 @@ div#article.grid {
     cursor: pointer;
 }
 .display-banner {
-    /* Your existing styles for display-banner */
+    
   }
   
   /* Define the 'hidden' class */
   .hidden {
     display: none;
   }
-  
+  #article {
+    padding-left: 150px; 
+  }
+.sportlight h2{
+    display: grid;
+    place-items: center;
+}
