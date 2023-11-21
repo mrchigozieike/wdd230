@@ -358,3 +358,49 @@ div#article.grid {
 		display: none;
 	}
 }
+
+
+.display-banner {
+    width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    padding: 0 30px 30px;
+    color: #333;
+}
+.display-banner img{
+    width: 40px;
+  
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(19, 17, 17, 0.2);
+}
+
+.display-banner {
+    font-size: 38px;
+    
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.display-banner  button{
+    width: 100%;
+   
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+ 
+    border-radius: 4px;
+    cursor: pointer;
+}
+.display-banner {
+    /* Your existing styles for display-banner */
+  }
+  
+  /* Define the 'hidden' class */
+  .hidden {
+    display: none;
+  }
+  

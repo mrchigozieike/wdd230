@@ -1,36 +1,46 @@
-//lon   49.74980   lat 6.63366
-// select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=49.74980&lon=6.63366&appid=0223e4cb340c52f6a1ebf64d9d429a3d';
-
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            //console.log(data); // this is for testing the call
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-function displayResults(weatherData) {
-    // Convert temperature from Kelvin to Celsius
-    const tempCelsius = (weatherData.main.temp - 273.15).toFixed(0);
-    currentTemp.innerHTML = `<strong>${tempCelsius}</strong>°C`;
-
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = desc;
-}
-
-apiFetch();
+const elements = [
+    { temp: '#current-temp', icon: '#weather-icon', desc: '#figcaption' },
+    { temp: '#temp1', icon: '#weather-icon1', desc: '#figcaption1' },
+    { temp: '#temp2', icon: '#weather-icon2', desc: '#figcaption2' },
+    { temp: '#temp3', icon: '#weather-icon3', desc: '#figcaption3' },
+  ];
+  
+  const url = 'https://api.openweathermap.org/data/2.5/onecall?lat=5.473368253538019&lon=7.081021564406769&units=metric&appid=c9aaa9542c9c5aee6ee21754decb8ff2';
+  
+  async function apiFetch(url) {
+      try {
+          const response = await fetch(url);
+          if (response.ok) {
+              const data = await response.json();
+              displayResults(data);
+          } else {
+              throw Error(await response.text());
+          }
+      } catch (error) {
+          console.log(error);
+      }
+  }
+  
+  function updateElement(element, data, index) {
+      const { temp, icon, desc } = element;
+      const dayData = data.daily[index];
+      const iconSrc = `https://openweathermap.org/img/w/${dayData.weather[0].icon}.png`;
+      const descrip = dayData.weather[0].description;
+  
+      document.querySelector(temp).innerHTML = `~ ${dayData.temp.day}&deg;C`;
+      document.querySelector(icon).setAttribute('src', iconSrc);
+      document.querySelector(icon).setAttribute('alt', 'weather icon');
+      document.querySelector(icon).setAttribute('width', '40');
+      document.querySelector(icon).setAttribute('height', '40');
+      document.querySelector(desc).textContent = `${descrip} ~ `;
+  }
+  
+  function displayResults(data) {
+      updateElement(elements[0], data, 0); // current day
+      for (let i = 0; i < 3; i++) {
+          updateElement(elements[i + 1], data, i + 1);
+      }
+  }
+  
+  apiFetch(url);
+  
