@@ -26,6 +26,7 @@ fieldset{
     margin-left: 30px;
    
 }
+
 .info{
     padding: 30px;
     padding-top: 0;
@@ -86,8 +87,8 @@ hr{
 }
 
 .three{    
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -110,7 +111,10 @@ hr{
     color: blue;
 }
 
-
+form{
+    padding-left: 100px;
+    
+}
 
 
 .joinBtn {
@@ -157,7 +161,8 @@ hr {
    
     width: 100%; /* Adjust this value to increase or decrease the length */
   }
-h1{   
+h1{ 
+    font-size: 40px;  
     margin-left: 20px;
     font-family: 'Roboto Mono', monospace;
 }
@@ -167,6 +172,8 @@ h3{
     font-family:  monospace;
 }
 h2{
+    font-size: 40px;
+    padding: 20px;
     display: grid;
     text-align: center;
 }
@@ -174,6 +181,7 @@ h6{
     padding-top: 0px;
 }
 .hero img{
+    
     width: 100%;
 }
 .title{
@@ -219,7 +227,7 @@ ul {
 footer {
     color: white;
     background-color:#1d4d72;     
-   
+    margin-top: 50px;
 }
 
 .details{    

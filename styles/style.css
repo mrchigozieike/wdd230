@@ -42,6 +42,9 @@
     text-align: center; /* Center text within the header */
     padding: 20px; /* Add some padding for better spacing */
 }
+.footer{
+    padding-top: 50px;
+}
 h1{
     display: grid;
     place-items: center;
