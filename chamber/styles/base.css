@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
 #mode {
 	position: absolute;
 	top: 5.5rem;
@@ -23,8 +22,7 @@ fieldset{
 }
 .header img {
     border-radius: 30px;
-    margin-left: 30px;
-   
+    margin-left: 30px;  
 }
 
 .info{
@@ -164,7 +162,7 @@ hr {
 h1{ 
     font-size: 40px;  
     margin-left: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'IM Fell English SC', serif;
 }
 h3{
     padding-left: 8px;  
@@ -176,6 +174,7 @@ h2{
     padding: 20px;
     display: grid;
     text-align: center;
+    font-family: 'IM Fell English SC', serif;
 }
 h6{
     padding-top: 0px;
@@ -191,13 +190,10 @@ h6{
 .headtitle {
     text-align: center;
 }
-.nav{  
-    
+.nav{    
     background-color: rgb(41, 24, 24);
-
     padding: 20px; 
     font-family: 'Roboto Mono', monospace;
-    
 }
 
 .nav a {
@@ -205,15 +201,12 @@ h6{
     display: flex;
     place-items: center;
     flex-direction: column;
-    color: white;
+    color: white;    
     text-decoration: none; /* Remove underline */
     margin: 0 10px; /* Adjust spacing between links */
 }
 .nav a.active {
-    border-bottom: 2px solid greenyellow; /* Adjust the thickness and color as needed */
-  }
-.main {   
-padding-left: 10%;
+    border-bottom: 2px solid white; /* Adjust the thickness and color as needed */
 }
 
 ul {
@@ -390,7 +383,7 @@ div#article.grid {
 }
 
 
-.display-banner {
+.display-banner, display-thanks{
     width: 400px;
     background-color: #f0f0f0;
     border-radius: 6px;
@@ -401,29 +394,34 @@ div#article.grid {
     text-align: center; 
     padding: 0 30px 30px;
     color: #333;
-}
-.display-banner img{
-    width: 40px;
-  
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(19, 17, 17, 0.2);
-}
 
-.display-banner {
-    font-size: 38px;
-    
+    font-size: 38px;    
     font-weight: 500;
     margin: 30px 0 10px;
 }
-.display-banner  button{
-    width: 100%;
-   
+.display-banner img{
+    width: 40px;  
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(14, 10, 10, 0.2);
+}
+
+
+.display-banner button{
+    width: 100%;   
     background: #1d4d72;
     color: #fff;
-    border: 0;
- 
+    border: 0; 
     border-radius: 4px;
     cursor: pointer;
+}
+.display-thanks button{
+    width: 100%;   
+    background: #1d4d72;
+    color: #fff;
+    border: 0; 
+    border-radius: 4px;
+    cursor: pointer;
+
 }
 .display-banner {
     
@@ -440,3 +438,9 @@ div#article.grid {
     display: grid;
     place-items: center;
 }
+
+.dark-mode {
+    background: #000;
+    color: #fff;
+  }
+  

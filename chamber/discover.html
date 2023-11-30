@@ -43,7 +43,7 @@
       <li><a href="join.html">Join</a></li>
     </ul>
     
-
+    <div class="main">  
         <section class="one">
           <div>
             <div>
@@ -80,12 +80,18 @@
                 <p>+99-9999-999</p>
                 <p>Website</p>
               </div>
-              <div class="info">         
-                <h3>Information</h3>
-                <h5>Imo State</h5>
-                <h5>☀️75F - Sunshine</h5>
-                <p>Number of visits: <span id="visits"></span></p>
-            </div>
+              <section class="info">
+                <h2>Weather Information</h2>
+                <h3>Current Weather</h3>
+                <p id="weather" class="weather"><img id="weather-icon" src=".." alt=".."><span id="figcaption"></span><span id="current-temp"></span> </p>
+                <h3>Three-day Forecast</h3>
+                <p id="weather1" class="weather"><img id="weather-icon1" src=".." alt=".."><span id="figcaption1"></span><span id="temp1"></span>
+                </p>
+                <p id="weather2" class="weather"><img id="weather-icon2" src=".." alt=".."><span id="figcaption2"></span><span id="temp2"></span>
+                </p>
+                <p id="weather3" class="weather"><img id="weather-icon3" src=".." alt=".."><span id="figcaption3"></span><span id="temp3"></span>
+                </p>
+              </section>
          
             </div>
     
@@ -167,7 +173,7 @@
         <section class="two">
           
         </section>
-  
+      </div>
         <footer class="footer">
           <section class="three">
             <div>
@@ -198,9 +204,12 @@
             
           </section>
         </footer>    
-          
+      </div> 
         <script src="scripts/script.js" async defer></script>
         <script src="scripts/mode.js" async defer></script>
+        <script src="scripts/weather.js" async defer></script>
+        <script src="scripts/invite.js"></script>
+        <script src="scripts/sportlight.js"></script>
         
     </body>
 </html>
