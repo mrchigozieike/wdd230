@@ -19,26 +19,4 @@ modeButton.addEventListener("click", () => {
     }
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-  // Get the form element
-  const form = document.querySelector('form');
 
-  // Get the element with the class 'display-thanks'
-  const thanksContainer = document.querySelector('.display-thanks');
-
-  // Add a submit event listener to the form
-  form.addEventListener('submit', (event) => {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    // Display the thank you message
-    thanksContainer.innerHTML = '<p>Thank you for submitting the form!</p><button id="closeButton">Close</button>';
-
-    // Add a click event listener to the close button
-    const closeButton = document.getElementById('closeButton');
-    closeButton.addEventListener('click', () => {
-      // Redirect to the home page (index.html)
-      window.location.href = 'index.html';
-    });
-  });
-});

@@ -71,7 +71,11 @@ figure {
     background-color:#1d4d72;
      
 }
-
+.thankyou{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
 hr{
     width: 80%;
     color: #fff;
