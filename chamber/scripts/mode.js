@@ -14,7 +14,7 @@ modeButton.addEventListener("click", () => {
         main.style.background = "#eee";
         main.style.color = "#000";
         
-        infoSection.style.color = "#fff"; // Set the text color for the info section
+        
         modeButton.textContent = "🕶️";
     }
 });
