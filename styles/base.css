@@ -7,8 +7,7 @@
 	font-weight:700;
 	text-decoration: none;
 	padding: .5rem .75rem;
-
-	color: #000;
+	color: rgb(0, 0, 0, 0.3);
 	position: absolute;
     top: 1rem;
 	right: 1rem;
@@ -22,7 +21,6 @@
 .nav li {
 	display: none;
 }
-
 
 .show li {
 	display: block;
