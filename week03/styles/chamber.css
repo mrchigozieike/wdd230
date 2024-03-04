@@ -28,7 +28,9 @@ footer {
   
   /* Add some padding for better spacing */
 }
-
+.mobile{
+  border-image-width: 5%;
+}
 h1 {
   margin-left: 20px;
   font-family: 'DM Serif Display', serif;
