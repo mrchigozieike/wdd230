@@ -395,6 +395,38 @@ div#article.grid {
 }
 
 
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: rgb(0, 0, 0, 0.3);
+	position: absolute;
+    top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+
+.nav li {
+	display: none;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "❌";
+}
+
+
+
 .display-banner, display-thanks{
     width: 400px;
     background-color: #f0f0f0;
