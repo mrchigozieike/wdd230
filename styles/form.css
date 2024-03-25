@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
+#mode {
+	position: absolute;
+	top: 5.5rem;
+	right: 1rem;
+	font-size: 3rem;
+	cursor: pointer;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+#btn {
+    margin: 1rem;
+    background-color: #1d4d72;
+    max-width: 15rem;
+    color: white;
+    border-radius: 15px;
+    padding: .75rem;
+    margin-left: 2rem;
+}
+.header img {
+    border-radius: 30px;
+    margin-left: 30px;  
+}
+
+.info{
+    padding: 30px;
+    padding-top: 0;
+    
+    background-color: #f0f0f0; /* Change to desired background color */
+    transition: background-color 0.3s;
+}
+
+/* Add background and set initial hover state for figures */
+figure {
+    background-color: #f0f0f0; /* Change to desired background color */
+    transition: background-color 0.3s; /* Add smooth transition effect */
+  }
+  
+  /* Add hover state for figures */
+  figure:hover {
+    background-color: #ccc; /*  hover background color */
+  }
+  
+  /* Adjust padding to create spacing around images */
+  figure img {
+    padding: 10px;
+  }
+.events::before {
+    content: url('../../media/examples/fire.png');
+    margin-right: 6px;
+    text-shadow: #EAE2B7 1px 0 10px;
+  }
+  
+.weather::before {
+    content: '⛅ ';
+    text-shadow: #EAE2B7 1px 0 10px;
+  }
+.social{
+    padding-left: 100px;
+}
+.images img{
+    border-radius: 30px;
+    width: 30%;
+}
+/* Set the background of the header to blue */
+.header{
+    color: white;
+    background-color:#1d4d72;
+     
+}
+.thankyou{
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+hr{
+    width: 80%;
+    color: #fff;
+}
+.one{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.three{    
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    border-color: #721d4c;
+   
+}
+.cards{
+    width: 250px;    
+    box-shadow: 0px 0px lightblue, -8px 0 .5em lightblue;
+    padding-left: 30px;
+    padding-right: 10px;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    margin: 5px;
+}
+
+.cards  h6{
+    color: blue;
+}
+
+form{
+    padding-left: 100px;
+    
+}
+
+
+.joinBtn {
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+  --c: #fff;
+  /* text color */
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+    #004dff;
+  /* background color */
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+  text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+    calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+  outline-offset: .1em;
+  transition: 0.3s;
+}
+
+.joinBtn:hover,
+.button-92:focus-visible {
+  --_p: 0%;
+  --_i: 1;
+}
+
+.joinBtn:active {
+  text-shadow: none;
+  color: var(--c);
+  box-shadow: inset 0 0 9e9q #0005;
+  transition: 0s;
+}
+
+.joinBtn {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  cursor: pointer;
+  padding: .1em .3em;
+}
+
+
+hr {
+   
+    width: 100%; /* Adjust this value to increase or decrease the length */
+  }
+h1{ 
+    font-size: 40px;  
+    margin-left: 20px;
+    font-family: 'IM Fell English SC', serif;
+}
+h3{
+    padding-left: 8px;  
+    padding-right: 8px;  
+    font-family:  monospace;
+}
+h2{
+    font-size: 40px;
+    padding: 20px;
+    display: grid;
+    text-align: center;
+    font-family: 'IM Fell English SC', serif;
+}
+h6{
+    padding-top: 0px;
+}
+.hero img{
+    
+    width: 100%;
+}
+.title{
+    display: flex;
+    place-items: center;
+}
+.headtitle {
+    text-align: center;
+}
+.nav{   
+     
+    background-color: rgb(41, 24, 24);
+    padding: 20px; 
+    font-family: 'Roboto Mono', monospace;
+}
+.nav a:hover{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgba(255,255,255,0.2);   
+}
+.nav .active{
+    background-color: rgb(0, 0, 0, 0.2 );
+}
+.nav a {
+    margin-top: 0px;
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    color: white;    
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Adjust spacing between links */
+}
+.nav a.active {
+    border-bottom: 2px solid white; /* Adjust the thickness and color as needed */
+}
+
+ul {
+  list-style-type: none;  
+  padding: 0;
+}
+
+.flag a{
+    color: white;
+}
+footer {
+    color: white;
+    background-color:#1d4d72;     
+    margin-top: 50px;
+}
+
+.details{    
+    color: #EAE2B7;
+    display: grid;
+    place-items: center;
+}
+table {
+    margin: auto;
+	border: thin solid black;
+	box-shadow: 0 0 10px rgb(230, 220, 220);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: .85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid rgb(41, 40, 40);
+}
+
+th {
+	background-color: gray;
+	font-size: larger;
+    color: white;
+}
+
+#header, #blank {
+    background-color: black;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(230, 220, 220);
+}
+
+tbody td:nth-child(1) {
+   font: bold;
+   font-weight: 800;
+}
+
+/* DIRECTORY PAGE */
+
+#grid, #list {
+    margin: .3rem;
+    border-radius: 5px;
+    font-weight: 700;
+    border-left: rgb(174, 10, 10) solid 6px;
+}
+
+.grid section p {
+    margin: 0;
+    padding: .5rem;
+}
+
+.grid section {
+    border-bottom: 1px groove rgb(3, 60, 3);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section > * {
+    padding: 0.1rem;
+}
+
+
+
+.list section {
+	display: block;
+    margin: 0;
+}
+
+.list section h2 {
+    text-align: left;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section img {
+	display: none; /* smaller viewports only */
+}
+
+.list section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.list section:nth-child(even) {
+	background-color: #bed;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+   /* DIRECTORY PAGE */
+   #dir-main {
+    display: block;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.menu-two{
+    display: flex;
+    place-content: center;
+}
+div#article.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: .4rem;
+}
+
+.list section img {
+    width: 100%;
+    height: auto;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 6rem 1fr 6rem;
+    margin: 0;
+    padding: 0.75rem;
+}
+
+
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+	.nav {
+		display: flex;
+	}
+	.nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 100%;
+	}
+	.nav a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+	}
+}
+
+
+/* Mobile View ***************/
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	color: rgb(0, 0, 0, 0.3);
+	position: absolute;
+    top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+
+.nav li {
+	display: none;
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "❌";
+}
+
+
+
+.display-banner, display-thanks{
+    width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    padding: 0 30px 30px;
+    color: #333;
+
+    font-size: 38px;    
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.display-banner img{
+    width: 40px;  
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(14, 10, 10, 0.2);
+}
+
+
+.display-banner button{
+    width: 100%;   
+    background: #1d4d72;
+    color: #fff;
+    border: 0; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+.display-thanks button{
+    width: 100%;   
+    background: #1d4d72;
+    color: #fff;
+    border: 0; 
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.display-banner {
+    
+  }
+  
+  /* Define the 'hidden' class */
+  .hidden {
+    display: none;
+  }
+  #article {
+    padding-left: 150px; 
+  }
+.sportlight h2{
+    display: grid;
+    place-items: center;
+}
+
+.dark-mode {
+    background: #000;
+    color: #fff;
+  }
+  

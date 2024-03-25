@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+  
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="manifest" href="/site.webmanifest">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chamber Of Commerce</title>
+    <meta name="author" content="Chigozie Henry Ike"> 
+    <meta name="description" content="Welcome to the Owerri Chamber Of Commerce. Discover events, businesses, and opportunities in Owerri,
+     Imo State. Join us in celebrating the grand opening of The Diamond Shack. Explore our directory and get involved in the community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="../styles/form.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
+    <!-- Open Graph meta tags -->
+
+
+    <meta property="og:title" content="O-town Chamber of Commerce.">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to O-town Chamber of Commerce. Explore businesses, Trade, and projects related Growth.">
+    <meta property="og:url" content="https://mrchigozieike.github.io/wdd230/chamber/index.html" >
+    <meta property="og:image" content="https://raw.githubusercontent.com/mrchigozieike/wdd230/main/chamber/images/chamberlogo.webp" >
+
+
+  </head>
+  <body>
+    
+    <div class="header">
+      <div class="title">
+        <img src="images/chamberlogo.webp" alt="chamber logo" height="144" width="108">
+       
+
+        <div class="social">
+          <img src="images/twitter.png" alt="social media icon">
+          <img src="images/facebook.png" alt="social media icon">
+        </div>
+        <h1>Owerri City Chamber of Commerce</h1>
+        <div id="mode">
+          🕶️          
+        </div>
+      </div>
+    </div>
+    <a id="menu"></a>
+  <ul class="nav">
+    <li><a href="index.html">Home</a></li>
+
+    <li><a href="discover.html">Discover</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+  </ul>
+  <div class="display-thanks"></div>
+  <div class="main">  
+  <section class="one">
+    <div>
+      <h2>Membership Form</h2>
+
+
+      <form action="thankyou.html" method="get">
+        <fieldset>
+          <legend>Applicant Information</legend>
+
+          <label for="fname">First Name*</label>
+          <input type="text" id="fname" name="fname" required>
+
+          <label for="lname">Last Name*</label>
+          <input type="text" id="lname" name="lname" required>
+
+
+          <label for="email">Email Address*</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com">
+
+          <label for="password">Password:</label>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"
+              pattern=".{8,}" 
+               title="Password must be at least 8 characters long"
+                  required>
+          <label for="phone_number">Mobile Phone Number*</label>
+          <input type="number" id="phone_number" name="phone_number" required>
+          <label for="userType">Are you a personal user or representing an organization?</label>
+          <select id="userType" name="userType">
+            <option value="personal">Personal</option>
+            <option value="organization">Organization</option>
+          </select>
+          <label for="organization_name">Business/Organization Name*</label>
+          <input type="text" id="organization_name" name="organization_name" min="0" step="1" required>
+
+          <label for="membership_level">Membership Level</label>
+          <select name="membership_level" id="membership_level">
+            <option value="">Please Select a Level</option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+
+          <label for="organization_description">Business/Organization Description:</label>
+          <textarea name="organization_description" id="organization_description"></textarea>
+
+          <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
+        </fieldset>
+
+        <input id="btn" type="submit" value="Join The Chamber!">
+      </form>
+    </div>
+   
+  </section>
+</div>
+  <footer class="footer">
+    <section class="three">
+      <div>
+        <picture>
+          <img src="images/chamberlogo.webp" alt="chamberlogo">
+        </picture>
+      </div>
+      <div>
+        <h5>Owerri Chamber of Commerce</h5>
+        <p>Plot 1242 akwakuma oweeri</p>
+        <h5>NG</h5>
+      </div>
+      <div class="flag">
+        <h6>+234-8063365400</h6>
+        <p>info@owerricc.com</p>
+        🚩
+        <a href="https://maps.app.goo.gl/AiftNg5YqBniFoby9">Map location</a>
+      </div>
+    </section>
+    <section class="details">
+      <hr>
+      <h5>
+        &copy; <span id="year"></span> | Chigozie Henry Ike | date:
+        <span class="day"></span>/<span class="month"></span>/<span id="currentyear"></span>
+      </h5>
+
+    </section>
+  </footer>
+
+  <script src="scripts/script.js" async defer></script>
+  <script src="scripts/mode.js" async defer></script>
+
+  
+</body>
+
+</html>
