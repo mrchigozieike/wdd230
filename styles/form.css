@@ -22,6 +22,15 @@ input[type=text], input[type=range], input[type=radio] {
 	margin: 1rem;
 	padding: 0.5em;
 }
+#btn {
+    margin: 1rem;
+    background-color: #1d4d72;
+    max-width: 15rem;
+    color: white;
+    border-radius: 15px;
+    padding: .75rem;
+    margin-left: 2rem;
+}
 
 #alpha:focus, #fruit:focus {
 	background-color: #eee;
