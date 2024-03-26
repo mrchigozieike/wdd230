@@ -48,6 +48,48 @@ input[type=text], input[type=range], input[type=radio] {
 }
 
 
+table {
+    margin: auto;
+	border: thin solid black;
+	box-shadow: 0 0 10px rgb(230, 220, 220);
+	border-collapse: collapse;
+}
+
+caption {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: .85rem;
+}
+
+th, td {
+	padding: 7px 15px;
+	border: 1px solid rgb(41, 40, 40);
+}
+
+th {
+	background-color: gray;
+	font-size: larger;
+    color: white;
+}
+
+#header, #blank {
+    background-color: black;
+}
+
+td {
+	text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(230, 220, 220);
+}
+
+tbody td:nth-child(1) {
+   font: bold;
+   font-weight: 800;
+}
+
 #r {
 	width: 180px;
 	margin-bottom: 0;
