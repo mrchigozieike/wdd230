@@ -24,7 +24,7 @@
         <meta property="og:image" content="https://raw.githubusercontent.com/mrchigozieike/wdd230/main/images/potrate.webp" >
         <link rel="stylesheet" href="styles/normalize.css">       
         <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/larger.css">
+        <link rel="stylesheet" href="styles/form.css">
         <link rel="stylesheet" href="styles/style.css">
     </head>
     <body>
@@ -54,49 +54,55 @@
 
 
             <form action="thankyou.html" method="get">
-                <h2>Membership Form</h2>
-              <fieldset>
-                <legend>Applicant Information</legend>
-      
-                <label for="fname">First Name*</label>
-                <input type="text" id="fname" name="fname" required>
-      
-                <label for="lname">Last Name*</label>
-                <input type="text" id="lname" name="lname" required>
-      
-      
-                <label for="email">Email Address*</label>
-                <input type="email" id="email" name="email" required placeholder="example@email.com">
-      
-                <label for="password">Password*</label>        
-                <input type="password" id="password" name="password"
-                    pattern=".{8,}" 
-                     title="Password must be at least 8 characters long"
-                        required>
-                <label for="phone_number">Mobile Phone Number*</label>
-                <input type="number" id="phone_number" name="phone_number" required>
-                <label for="userType">Are you a personal user or representing an organization?</label>
-                <select id="userType" name="userType">
-                  <option value="personal">Personal</option>
-                  <option value="organization">Organization</option>
-                </select>
-              
-                <label for="membership_level">Membership Level</label>
-                <select name="membership_level" id="membership_level">
-                  <option value="">Please Select a Level</option>
-                  <option value="np">NP Membership</option>
-                  <option value="bronze">Bronze Membership</option>
-                  <option value="silver">Silver Membership</option>
-                  <option value="gold">Gold Membership</option>
-                </select>
-      
-                <label for="organization_description">Business/Organization Description:</label>
-                <textarea name="organization_description" id="organization_description"></textarea>
-      
-                <input type="hidden" name="timestamp" id="timestamp" value="<%= new Date() %>">
-              </fieldset>
-      
-              <input id="btn" type="submit" value="Join The Chamber!">
+                <h1>HTML Form Element Examples</h1>
+                <label for="alpha">INPUT: text, required, pattern(alpha characters only), with CSS valid and invalid pseudo-classes</label>
+                <input type="text" id="alpha" name="alpha" required pattern="[A-Za-z]*">
+                <hr>
+                
+                <label for="fruit">INPUT: text, required, datalist - <br>What's your favorite fruit? <abbr title="This field is mandatory" aria-label="required">*</abbr></label>
+                <input type="text" id="fruit" name="fruit" list="l1" required>
+                <hr>
+                
+                <label for="r">INPUT: range, min, max, datalist, required</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="5" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </datalist>
+                <div class="ref">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                </div>
+                <hr>
+                
+                <label>INPUT: radio, required, common name, altered look with CSS stars</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                </div>
+                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
+                <hr>
+                <div class="vcentered">
+                    <label for="task" data-content="Completed the Module" class="inline">INPUT: checkbox, CSS size</label>
+                    <input type="checkbox" id="task" name="task" value="task">
+                </div>
+                <div class="ref"><a href="https://codepen.io/kathykato/pen/xxGObEp">CheckBox Line Through Source</a></div>
+                
+                <datalist id="l1">
+                    <option>Banana</option>
+                    <option>Cherry</option>
+                    <option>Apple</option>
+                    <option>Strawberry</option>
+                    <option>Lemon</option>
+                    <option>Orange</option>
+                </datalist>
             </form>
                
         
@@ -110,7 +116,7 @@
                 Last Mordified: <span class="day"></span>/<span class="month"></span>/<span id="currentyear"></span>
             </h6>
         </footer>       
-          
+        <script src="scripts/form.js"></script>
         <script src="scripts/getDates.js"></script>
         <script src="scripts/mode.js" async defer></script>
         <script src="scripts/weather.js" async defer></script>
