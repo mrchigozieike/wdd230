@@ -1,3 +1,9 @@
+/* Example usage of variables */
+.title {
+    color: var(--main-color); /* Use main color variable */
+    border: 1px solid var(--secondary-color); /* Use secondary color variable */
+    border-radius: var(--border-radius); /* Use border radius variable */
+}
 
 
 /* Mobile View ***************/

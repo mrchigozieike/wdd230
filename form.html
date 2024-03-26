@@ -1,109 +1,86 @@
-
 <!DOCTYPE html>
-
-<html lang="en-us">  
-    
-    <head>        
-        <meta charset="utf-8">             
-        <link rel="manifest" href="/site.webmanifest">       
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">       
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Registeration Form.</title>
-        <meta name="description" content="WDD 230 Web Frontend Development Chigozie Henry Ike.">
-        <meta name="author" content="Chigozie Henry Ike">  
-        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">      
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-         
-        <meta property="og:title" content="Registeration form">
-        <meta property="og:type" content="website">
-        <meta property="og:description" content="Welcome to Chigozie Henry Ike's Web Frontend Development course assignment portal. Explore lessons, assignments, and projects related to web development and design principles.">
-        <meta property="og:url" content="https://mrchigozieike.github.io/wdd230/" >
-        <meta property="og:image" content="https://raw.githubusercontent.com/mrchigozieike/wdd230/main/images/potrate.webp" >
-        <link rel="stylesheet" href="styles/normalize.css">       
-        <link rel="stylesheet" href="styles/base.css">
-        <link rel="stylesheet" href="styles/form.css">
-        <link rel="stylesheet" href="styles/style.css">
-    </head>
-    <body>
-        <header class="header">
-            <div class="title">
-                
-                <img src="images/potrate.webp" alt="potrate of Chigozie ike henry" height="144" width="108">
-                <h2>Chigozie Henry Ike</h2>
-                <div id="mode">
-                    🕶️
-                </div>
-            </div> 
-            <a id="menu" ></a>
-        </header>
-        <nav>
-            <ul class="nav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="week03/chamber-site-plan.html">Site Plan</a></li>
-                <li><a href="chamber/index.html">Chamber</a></li>
-                <li><a href="#">Byui-Idaho</a></li>
-                <li><a href="#">Scripture</a></li>
-            </ul>
-        </nav>
-      
-        <main class="main">
-          
-
-
-            <form action="thankyou.html" method="get">
-               
-                <h1>Create an Account</h1>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password1">Password:</label>
-                <input type="password" id="password1" name="password1" required>
-                <label for="password2">Confirm Password:</label>
-                <input type="password" id="password2" name="password2" required>
-               
-                <label for="phoneNumber">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+\-]+@byui\.edu" required>
-
-                
-                <label for="r">INPUT: range, min 5, max 50, datalist, required</label>
-                <div id="rangevalue">0</div>
-                <input type="range" id="r" name="r" min="5" max="50" value="0" step="1" list="rangevalues">
-                <datalist id="rangevalues">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </datalist>
-                <div class="ref">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"Input: Range</a>
-                </div>
-                <hr>
-                <input id="btn" type="submit" value="Register me">
-            
-            </form>
-               
-        
-        </main>
-        <footer class="footer">            
-            <h6>&copy; <span id="year"></span></h6>
-            <h5> Chigozie Henry Ike</h5>
-            <h5>🇳🇬</h5>
-            <div class="flag"><a href="https://maps.app.goo.gl/AiftNg5YqBniFoby9">Map location</a></div>
-            <h6>
-                Last Mordified: <span class="day"></span>/<span class="month"></span>/<span id="currentyear"></span>
-            </h6>
-        </footer>       
-        <script src="scripts/for.js"></script>
-        <script src="scripts/getDates.js"></script>
-        <script src="scripts/mode.js" async defer></script>
-        <script src="scripts/weather.js" async defer></script>
-      
-    </body>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <meta name="description" content="Registration form to create a new user account">
+    <meta name="author" content="Chigozie Henry Ike">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Registration form">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Welcome to Chigozie Henry Ike's Web Frontend Development course assignment portal. Explore lessons, assignments, and projects related to web development and design principles.">
+    <meta property="og:url" content="https://mrchigozieike.github.io/wdd230/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/mrchigozieike/wdd230/main/images/potrate.webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title">
+            <img src="images/potrate.webp" alt="potrate of Chigozie ike henry" height="144" width="108">
+            <h2>Chigozie Henry Ike</h2>
+            <div id="mode">🕶️</div>
+        </div>
+        <a id="menu"></a>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="week03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="#">Byui-Idaho</a></li>
+            <li><a href="#">Scripture</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <form action="thankyou.html" method="get">
+            <h1>Create an Account</h1>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="password1" required>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" id="password2" name="password2" required>
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="r">Input: Range, min 5, max 50, datalist, required</label>
+            <div id="rangevalue">0</div>
+            <input type="range" id="r" name="r" min="5" max="50" value="0" step="1" list="rangevalues">
+            <datalist id="rangevalues">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </datalist>
+            <div class="ref">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">Input: Range</a>
+            </div>
+            <hr>
+            <input id="btn" type="submit" value="Register me">
+        </form>
+    </main>
+    <footer class="footer">
+        <h6>&copy; <span id="year"></span></h6>
+        <h5>Chigozie Henry Ike</h5>
+        <h5>🇳🇬</h5>
+        <div class="flag"><a href="https://maps.app.goo.gl/AiftNg5YqBniFoby9">Map location</a></div>
+        <h6>Last Modified: <span class="day"></span>/<span class="month"></span>/<span id="currentyear"></span></h6>
+    </footer>
+    <script src="scripts/for.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/mode.js" async defer></script>
+    <script src="scripts/weather.js" async defer></script>
+</body>
 </html>
