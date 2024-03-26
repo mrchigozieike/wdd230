@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
   const d = new Date();
   const day = d.getDay();
   const main = document.querySelector('#index_main');
