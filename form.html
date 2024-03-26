@@ -55,13 +55,19 @@
 
             <form action="thankyou.html" method="get">
                 <h1>HTML Form Element Examples</h1>
-                <label for="alpha">INPUT: text, required, pattern(alpha characters only), with CSS valid and invalid pseudo-classes</label>
-                <input type="text" id="alpha" name="alpha" required pattern="[A-Za-z]*">
+                <h1>Create an Account</h1>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password1">Password:</label>
+                <input type="password" id="password1" name="password1" required>
+                <label for="password2">Confirm Password:</label>
+                <input type="password" id="password2" name="password2" required>
+               
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
                 <hr>
-                
-                <label for="fruit">INPUT: text, required, datalist - <br>What's your favorite fruit? <abbr title="This field is mandatory" aria-label="required">*</abbr></label>
-                <input type="text" id="fruit" name="fruit" list="l1" required>
-                <hr>
+
+
                 
                 <label for="r">INPUT: range, min, max, datalist, required</label>
                 <div id="rangevalue">0</div>
@@ -75,34 +81,11 @@
                     <option value="5">5</option>
                 </datalist>
                 <div class="ref">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range">MDN Input: Range</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range"Input: Range</a>
                 </div>
-                <hr>
-                
-                <label>INPUT: radio, required, common name, altered look with CSS stars</label>
-                <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
-                </div>
-                <div class="ref"><a href="https://codepen.io/nevkatz/pen/OJPBBpL" target="_blank">Star Rating Source Pen</a></div>
-                <hr>
-                <div class="vcentered">
-                    <label for="task" data-content="Completed the Module" class="inline">INPUT: checkbox, CSS size</label>
-                    <input type="checkbox" id="task" name="task" value="task">
-                </div>
-                <div class="ref"><a href="https://codepen.io/kathykato/pen/xxGObEp">CheckBox Line Through Source</a></div>
-                
-                <datalist id="l1">
-                    <option>Banana</option>
-                    <option>Cherry</option>
-                    <option>Apple</option>
-                    <option>Strawberry</option>
-                    <option>Lemon</option>
-                    <option>Orange</option>
-                </datalist>
+ 
+                <input id="btn" type="submit" value="Submit">
+            
             </form>
                
         
@@ -116,7 +99,7 @@
                 Last Mordified: <span class="day"></span>/<span class="month"></span>/<span id="currentyear"></span>
             </h6>
         </footer>       
-        <script src="scripts/form.js"></script>
+        <script src="scripts/for.js"></script>
         <script src="scripts/getDates.js"></script>
         <script src="scripts/mode.js" async defer></script>
         <script src="scripts/weather.js" async defer></script>
