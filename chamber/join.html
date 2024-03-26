@@ -6,7 +6,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chamber Of Commerce</title>
+  <title>Registration of chamber</title>
   <meta name="author" content="Chigozie Henry Ike">
   <meta name="description" content="Welcome to the Owerri Chamber Of Commerce. Discover events, businesses, and opportunities in Owerri, Imo State. Join us in celebrating the grand opening of The Diamond Shack. Explore our directory and get involved in the community.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -64,13 +64,16 @@
           <fieldset>
             <legend>Applicant Information</legend>
 
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
             <label for="fname">First Name*</label>
             <input type="text" id="fname" name="fname" required>
 
             <label for="lname">Last Name*</label>
             <input type="text" id="lname" name="lname" required>
 
-
+           
             <label for="email">Email Address*</label>
             <input type="email" id="email" name="email" required placeholder="example@email.com">
 
@@ -80,9 +83,8 @@
             <label for="confirm_password">Confirm Password:</label>
             <input type="password" id="confirm_password" name="confirm_password" pattern=".{8,}" title="Password must be at least 8 characters long" required>
 
-            <label for="phone_number">Mobile Phone Number*</label>
-            <input type="number" id="phone_number" name="phone_number" required>
-
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
             <label for="userType">Are you a personal user
               or representing an organization?</label>
               <select id="userType" name="userType">
