@@ -1,13 +1,13 @@
- document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const d = new Date();
   const day = d.getDay();
-  const main = document.querySelector('#index_main');
   let displayBanner = document.querySelector('.display-banner');
 
+  // If the display-banner element doesn't exist, create it
   if (!displayBanner) {
     displayBanner = document.createElement('div');
     displayBanner.classList.add('display-banner');
-    main.insertBefore(displayBanner, main.firstChild);
+    document.body.insertBefore(displayBanner, document.body.firstChild);
   }
 
   // Set the text content for the display banner based on the current day
@@ -32,7 +32,7 @@
   imgElement.src = 'images/tick.webp'; // Adjust the path to your image
   imgElement.alt = 'Banner Image';
 
-  // Create the close button and add the event listener outside the DOMContentLoaded event listener
+  // Create the close button and add the event listener outside the switch statement
   const closeButton = document.createElement('button');
   closeButton.textContent = 'OK';
   closeButton.addEventListener('click', () => {
@@ -41,5 +41,4 @@
 
   displayBanner.appendChild(imgElement);
   displayBanner.appendChild(closeButton);
-  displayBanner.classList.add('invite');
 });

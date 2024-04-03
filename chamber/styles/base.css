@@ -7,6 +7,65 @@
 	font-size: 3rem;
 	cursor: pointer;
 }
+
+
+.display-banner, display-thanks{
+    width: 400px;
+    background-color: #f0f0f0;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    text-align: center; 
+    padding: 0 30px 30px;
+    color: #333;
+
+    font-size: 38px;    
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.display-banner img{
+    width: 40px;  
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(14, 10, 10, 0.2);
+}
+
+
+.display-banner button{
+    width: 100%;   
+    background: #1d4d72;
+    color: #fff;
+    border: 0; 
+    border-radius: 4px;
+    cursor: pointer;
+}
+.display-thanks button{
+    width: 100%;   
+    background: #1d4d72;
+    color: #fff;
+    border: 0; 
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.display-banner {
+    
+  }
+  
+  /* Define the 'hidden' class */
+  .hidden {
+    display: none;
+  }
+  #article {
+    padding-left: 150px; 
+  }
+.sportlight h2{
+    display: grid;
+    place-items: center;
+}
+
 fieldset{
     display: flex;
     flex-direction: column;
@@ -426,63 +485,6 @@ div#article.grid {
 }
 
 
-
-.display-banner, display-thanks{
-    width: 400px;
-    background-color: #f0f0f0;
-    border-radius: 6px;
-    top: 50%;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    text-align: center; 
-    padding: 0 30px 30px;
-    color: #333;
-
-    font-size: 38px;    
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.display-banner img{
-    width: 40px;  
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(14, 10, 10, 0.2);
-}
-
-
-.display-banner button{
-    width: 100%;   
-    background: #1d4d72;
-    color: #fff;
-    border: 0; 
-    border-radius: 4px;
-    cursor: pointer;
-}
-.display-thanks button{
-    width: 100%;   
-    background: #1d4d72;
-    color: #fff;
-    border: 0; 
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-.display-banner {
-    
-  }
-  
-  /* Define the 'hidden' class */
-  .hidden {
-    display: none;
-  }
-  #article {
-    padding-left: 150px; 
-  }
-.sportlight h2{
-    display: grid;
-    place-items: center;
-}
 
 .dark-mode {
     background: #000;
